@@ -20,28 +20,28 @@
 //   }
 // }
 
-var resize = document.getElementsByClassName('resize');
-console.log(resize);
+// var resize = document.getElementsByClassName('resize');
+// console.log(resize);
 
-for(var i =0; i<resize.length; i++) { 
-	console.log('test')
-resize[i].addEventListener('click', function(){
-	this.style.fontSize = "48px";
-})
+// for(var i =0; i<resize.length; i++) { 
+// 	console.log('test')
+// resize[i].addEventListener('click', function(){
+// 	this.style.fontSize = "48px";
+// })
 
-}
+// }
 
 //*****
  
 
-var show = document.getElementsByClassName('lm')
+// var show = document.getElementsByClassName('lm')
 
-for (var i=0; i<lm.length; i++){
+// for (var i=0; i<lm.length; i++){
 
-		lm[i].addEventListener('click', function(){
+// 		lm[i].addEventListener('click', function(){
 
-		})
-}
+// 		})
+// }
 
 
 
@@ -69,36 +69,20 @@ for (var i=0; i<lm.length; i++){
 
 // }
 
-function show() {
-    var myClasses = document.querySelectorAll('.lm1'),
-        i = 0,
-        l = myClasses.length;
-
-    for (i; i < l; i++) {
-        myClasses[i].style.display = 'block';
-    }
-}
-
-function showtab(tabname) 
+function showtab(cartename) 
 { 
 	// hide every element with class 'tab'  
-	var tabs = getElementsByClass('tab');
-	for(i=0; i<tabs.length; i++) 
-		tabs[i].style.display = 'none';
+	var cartes = getElementsByClass('lm');
+	for(i=0; i<cartes.length; i++) 
+		cartes[i].style.display = 'none';
 	// hide every element with class 'tab'		 
  
-	document.getElementById(tabname).style.display='block';
+	document.getElementsByClass('lm').style.display='block';
 	// show element with given tabname 
-} 
 
+}
 
-
-
-
-
-
-
-
+ 
 
  
 //************* last 
@@ -189,5 +173,3 @@ function showtab(tabname)
 // 		blocToutes.style.display = 'block';
 // 	}
 // })
-
- 

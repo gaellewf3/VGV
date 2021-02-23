@@ -415,6 +415,9 @@ select {
   color: red; }
 
 /******************** PAGE OFFRES *****************/
+.lm {
+  display: none; }
+
 #accueil-offres {
   background: url(../VGV/img/map.jpeg) no-repeat center;
   background-repeat: no-repeat;

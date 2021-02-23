@@ -282,7 +282,11 @@
 
  
  
-
+ 
     <?php require_once "inc/footer.inc.php";?>
 
- 
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>

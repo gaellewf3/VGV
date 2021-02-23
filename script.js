@@ -13,6 +13,14 @@ var mymap = L.map("map").setView([ 48.56300,2.34268], 13);
 
 // ------------ checkbox offres -------------
 
+
+
+
+
+
+
+
+
 // var carre0 = document.getElementById('carre0'); 
 // carre0.onclick = function(){
 // 	if (carre0.style.backgroundColor == 'white') {				 

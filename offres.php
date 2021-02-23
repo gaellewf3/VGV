@@ -46,7 +46,15 @@
                     <a href="#voyage" onclick="toggleVisibility('blocCroisiereCircuit');" class="btnVoyage" id="ccButton">Croisières/Circuits</a>
                     <a href="#voyage" onclick="toggleVisibility('blocDivers');" class="btnVoyage" id="diversButton">Divers</a>
                    
-                   
+                    </div>
+
+
+        <div id="choixVoyage">
+              <a href="#" onclick="showtab('lm');">Last minute</a>, 
+             <a href="#" onclick="showtab('tab2');">Long courrier</a>,
+            <a href="#" onclick="showtab('tab3');">Moyen courrier</a>,
+            <a href="#" onclick="showtab('tab4');">Croisières/Circuits</a>,
+            <a href="#" onclick="showtab('tab5');">Divers</a>
               
                   </div>
 
@@ -57,6 +65,29 @@
 
 
 <section id="dernieres-offres">
+
+
+<div class="tab bgray" id="tab1">
+Tab1
+</div>
+ 
+<div class="tab bgray" id="tab2" style="display: none;">
+Tab2
+</div>
+ 
+<div class="tab bgray" id="tab3" style="display: none;">
+Tab3
+</div>
+ 
+<div class="tab bgray" id="tab4" style="display: none;">
+Tab4
+</div>
+ 
+<div class="tab bgray" id="tab5" style="display: none;">
+Tab5
+</div>
+  
+
  
 <!-- http://www.anyexample.com/webdev/javascript/javascript_getelementsbyclass_function.xml -->
 
@@ -68,7 +99,7 @@
       
  <!-- <div class="lm">  -->
 
-   <div class="carte">
+   <div class="carte lm">
  
 
              <div class="image-carte"> </div>
@@ -377,7 +408,6 @@
 
 </section>
 
-<script type="text/javascript" src="offres.js"></script>
 
 
     <?php require_once "inc/footer.inc.php";?>
@@ -387,7 +417,11 @@
 
 
 
+    <script type="text/javascript" src="offres.js"></script>
 
+</body>
+
+</html>
 
 
 
