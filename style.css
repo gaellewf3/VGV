@@ -1,0 +1,697 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.clear {
+  clear: both; }
+
+body {
+  font-family: sans-serif; }
+
+header {
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px; }
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center; }
+
+header nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 50px 100px;
+  font-size: 24px; }
+
+nav a:hover {
+  color: #00E300;
+  text-decoration: underline; }
+
+header img {
+  width: 167px;
+  height: 113px; }
+
+#accueil {
+  /* width: 100%;*/
+  height: 480px;
+  background: url(../VGV/img/plage_accueil.jpg) no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position:relative; */
+  top: 120px;
+  left: 0px;
+  margin-top: 120px; }
+
+#accueil #cap {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 450px;
+  height: 248px;
+  float: left;
+  margin: 80px 0 10px 140px; }
+
+#accueil h1 {
+  font-size: 40px;
+  color: #00e300;
+  font-weight: normal;
+  padding: 10px;
+  background-color: white; }
+
+#accueil p {
+  font-size: 45px;
+  color: white;
+  font-weight: normal;
+  padding: 15px 0 0 15px; }
+
+.bouton {
+  margin-left: -15px; }
+
+.bouton a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  padding: 18px auto 8px auto;
+  background-color: #00E300; }
+
+#accueil #offre {
+  background-color: rgba(0, 0, 0, 0.2);
+  background: url(../VGV/img/ski2.png) no-repeat center;
+  /* background-size: 100%; */
+  background-size: 351px;
+  border: 4px solid white;
+  width: 290px;
+  height: 420px;
+  float: right;
+  margin: 10px 240px 10px 0; }
+
+#accueil h2 {
+  font-size: 34px;
+  color: #00e300;
+  font-weight: normal;
+  padding: 10px;
+  background-color: white; }
+
+.bouton2 {
+  margin-left: -13px;
+  margin-top: 297px; }
+
+.bouton2 a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  padding: 18px auto 8px auto;
+  background-color: #00E300; }
+
+#dernieres_offres {
+  width: 100%;
+  background-color: #e3fce3; }
+
+#dernieres_offres h3 {
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 48px;
+  color: black;
+  padding: 50px 0 50px 0; }
+
+.carte {
+  width: 20%;
+  float: left;
+  border: grey solid 1px;
+  background-color: white;
+  margin: 2.4%; }
+
+.image-carte {
+  background: url(../VGV/img/tunisia.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 240px; }
+
+.description {
+  font-size: 18px;
+  text-transform: none;
+  font-weight: normal;
+  padding: 15px;
+  box-sizing: border-box; }
+
+h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.bouton_voir {
+  background-color: #00E300;
+  border: none;
+  padding: 3px 5px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  text-decoration: none;
+  color: #ffffff; }
+
+.prix {
+  font-weight: bold;
+  font-size: 24px;
+  float: right;
+  color: #00E300; }
+
+.gros_bouton_voir {
+  background-color: #00E300;
+  border: none;
+  padding: 3px 5px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin: 30px 825px; }
+
+.gros_bouton_voir a {
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: normal;
+  color: white; }
+
+#choisir {
+  background: url(../VGV/img/feuille.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px; }
+
+#choisir h3 {
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 48px;
+  color: black;
+  padding: 50px 0 50px 0; }
+
+.icons {
+  display: flex;
+  margin: 30px 0px 0px 0px; }
+
+.content-icon {
+  width: 25%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  /* border: 1px solid black; */ }
+
+.content-icon p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+  padding: 40px 0 0 0; }
+
+.content-icon img {
+  margin: auto;
+  display: block;
+  height: 120px; }
+
+#newsletter {
+  background: url(../VGV/img/moussa2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 480px; }
+
+#newsletter h3 {
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 48px;
+  color: white;
+  padding: 30px 0 30px 0; }
+
+#newsletter p {
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 30px;
+  color: white; }
+
+#barre {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  padding: 110px 0 30px 0; }
+
+::placeholder {
+  color: #BEBEBE;
+  font-size: 15px;
+  padding: 10px; }
+
+#blocMail {
+  display: flex;
+  background-color: white; }
+
+#validate {
+  color: #ffffff;
+  background-color: #00E300;
+  padding: 10px 40px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 30px; }
+
+#qui {
+  background: url(../VGV/img/feuille.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px; }
+
+#qui h3 {
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 48px;
+  color: black;
+  padding: 50px 0 50px 0; }
+
+.ligne {
+  width: 100%;
+  display: flex; }
+
+.ligne div {
+  width: 50%; }
+
+#bloc-gauche {
+  padding: 0px 50px 0px 300px; }
+
+#bloc-droit {
+  padding: 0px 200px 0 0px; }
+
+#image-agence img {
+  width: 510px;
+  height: 400px; }
+
+#bloc-bio p {
+  text-align: justify;
+  padding: 70px 0 10px 0;
+  line-height: 25px;
+  /* float: right;   */ }
+
+#contact {
+  width: 100%;
+  background-color: #e3fce3; }
+
+#contact h3 {
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 48px;
+  color: black;
+  padding: 50px 0 50px 0; }
+
+#infos-pratique {
+  display: flex;
+  margin: auto;
+  width: 50%; }
+
+.content-info {
+  padding: 0 20px 0;
+  box-sizing: border-box; }
+
+.content-info p {
+  max-width: 500px;
+  line-height: 25px;
+  font-size: 18px;
+  text-align: center; }
+
+.content-info span {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #00E300; }
+
+.fab {
+  font-size: 70px;
+  color: #00E300;
+  float: left;
+  margin: 10px; }
+
+#map {
+  float: right;
+  width: 200px;
+  height: 200px;
+  margin: 10px; }
+
+/************ formulaire contact *********/
+#bloc-form {
+  width: 50%; }
+
+.form-style-1 {
+  max-width: 500px;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  padding: 20px;
+  display: block;
+  list-style: none;
+  /* espace entre les bloc : */
+  margin: 10px 10px 10px 10px; }
+
+.date {
+  padding: 4px;
+  margin: 10px 10px 10px 10px; }
+
+.form-style-1 input[type=text],
+.form-style-1 input[type=tel],
+.form-style-1 input[type=email],
+textarea,
+select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #BEBEBE;
+  padding: 7px;
+  margin: 1px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none; }
+
+.form-style-1 input[type=text]:focus,
+.form-style-1 input[type=tel]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus,
+.form-style-1 select:focus {
+  -moz-box-shadow: 0 0 8px #00e300;
+  -webkit-box-shadow: 0 0 8px #00e300;
+  box-shadow: 0 0 8px #00e300;
+  border: 1px solid #00e300; }
+
+.form-style-1 .field-divided {
+  width: 49%;
+  margin: 15px 0 0 0; }
+
+.form-style-1 .field-long {
+  width: 100%;
+  margin: 15px 0 0 0; }
+
+.form-style-1 .field-textarea {
+  height: 250px;
+  margin: 5px 0 0 0; }
+
+.form-style-1 input[type=submit], .form-style-1 input[type=button] {
+  background: #00e300;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 10px 0 0 0; }
+
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover {
+  background: black;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; }
+
+.form-style-1 .required {
+  color: red; }
+
+/******************** PAGE OFFRES *****************/
+#accueil-offres {
+  background: url(../VGV/img/map.jpeg) no-repeat center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#accueil-offres h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #00e300;
+  font-weight: normal; }
+
+.rect-blanc {
+  border: 1px black solid;
+  padding: 10px 30px;
+  width: 560px;
+  background-color: white;
+  margin-top: 100px; }
+
+.lm1 {
+  display: none; }
+
+/* barre de recherche */
+#choixVoyage {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  background: rgba(255, 255, 255, 0.5); }
+
+#choixVoyage p {
+  padding: 0 30px 0 30px;
+  font-size: 24px; }
+
+.btnVoyage {
+  color: #00E300;
+  background-color: #ffffff;
+  border: 1px solid #00E300;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px 20px; }
+
+.btnVoyage:hover {
+  color: #ffffff;
+  background-color: #00E300;
+  border: 1px solid #00E300;
+  transition: 0.5s; }
+
+.btnSelected {
+  color: #ffffff;
+  background-color: #00E300;
+  border: 1px solid #00E300;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px; }
+
+#dernieres-offres {
+  width: 100%; }
+
+.cartes {
+  margin: 0 auto; }
+
+#blocLast {
+  width: 100%;
+  padding: 25%; }
+
+#demande-banniere {
+  background: url(../VGV/img/map22.png) no-repeat;
+  height: 220px;
+  background-size: cover;
+  top: 120px;
+  left: 0px;
+  margin-top: 120px; }
+
+#rect {
+  background-color: white;
+  width: 800px;
+  margin: auto;
+  padding: 30px; }
+
+#rect h1 {
+  font-size: 36px;
+  color: #00E300;
+  text-align: center; }
+
+#demande-formulaire {
+  height: 700px; }
+
+#demande-formulaire h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 50px; }
+
+#form {
+  background-color: #e8e8e8;
+  width: 550px;
+  margin: auto; }
+
+/********** FOOTER **********/
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 240px;
+  background-color: #00e300; }
+
+footer h5 {
+  font-size: 18px; }
+
+.ligne2 {
+  width: 100%;
+  display: flex; }
+
+.ligne2 div {
+  width: 50%; }
+
+.copyright {
+  color: white;
+  text-align: center;
+  padding: 3%;
+  line-height: 25px; }
+
+.copyright a {
+  text-decoration: none;
+  color: white; }
+
+.copyright a:hover {
+  color: black; }
+
+.logo {
+  color: white;
+  text-align: center;
+  padding: 3%;
+  line-height: 25px; }
+
+.logo img {
+  padding: 2px;
+  width: 7%; }
+
+@media screen and (max-width: 350px) {
+  section {
+    padding: 50px 0; }
+
+  #dernieres_offres {
+    height: 1300px; }
+
+  #dernieres_offres h3 {
+    font-size: 35px;
+    margin: 30px 0 0 0; }
+
+  .cartes {
+    display: grid; }
+
+  #choisir {
+    height: 450px; }
+
+  #choisir h3 {
+    font-size: 35px;
+    margin: 30px 0 0 0; }
+
+  .icons {
+    display: flex;
+    padding: 30px;
+    margin: auto; }
+
+  .content-icon p {
+    font-size: 8px;
+    line-height: 9px;
+    text-align: center; }
+
+  .content-icon img {
+    margin: auto;
+    display: flex;
+    height: 50px; }
+
+  #newsletter {
+    height: 200px;
+    background-attachment: cover; }
+
+  #newsletter h3 {
+    font-size: 30px;
+    margin: 30px 0 0 0; }
+
+  #newsletter p {
+    font-size: 10px; }
+
+  #barre {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding: 20px 0 30px 0; }
+
+  #validate {
+    padding: 5px 10px;
+    font-size: 10px; }
+
+  #qui {
+    height: 800px; }
+
+  #qui h3 {
+    font-size: 30px;
+    margin: 10px 0 0 0; }
+
+  #bloc-gauche img {
+    width: 100%;
+    margin: auto; }
+
+  #bloc-gauche {
+    width: 100%;
+    display: block; }
+
+  #bloc-droit {
+    display: block;
+    width: 100%; }
+
+  #bloc-bio p {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center; }
+
+  .ligne {
+    width: 100%;
+    display: block; }
+
+  .ligne div {
+    width: 100%;
+    display: block; }
+
+  #contact {
+    height: 1000px; }
+
+  #contact h3 {
+    font-size: 30px;
+    margin: 10px 0 0 0; }
+
+  #contact div {
+    width: 50%; }
+
+  #infos-pratique {
+    width: 100%; }
+
+  .content-info {
+    width: 100%;
+    display: block; }
+
+  .content-info p {
+    font-size: 15px;
+    text-align: center; }
+
+  .content-info span {
+    font-size: 16px; }
+
+  .fab {
+    display: block;
+    margin: 10px 25px; }
+
+  #map {
+    display: block;
+    width: 100%; }
+
+  #bloc-form {
+    float: right; }
+
+  footer {
+    display: block; }
+
+  footer h5 {
+    font-size: 15px; }
+
+  .ligne2 {
+    width: 100%;
+    display: block; }
+
+  .ligne2 div {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
