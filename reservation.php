@@ -1,13 +1,18 @@
 <?php require_once "inc/header.inc.php"; ?>
 
 
-    <section id="demande-banniere">
+
+
+
+
+    <section id="banniere-page-reservation">
     
-            <div id="rect">
+            <div id="rectangle-demande-reservation">
             <h1> Demande de réservation </h1> 
             </div>
-                        
-            
+
+              
+          
 
     </section>
 
@@ -30,17 +35,6 @@
      <input type="email" name="email" class="field-divided" placeholder="Email"/>
      <input type="tel" name="tel" class="field-divided" placeholder="Telephone"/>
 
-
-
-  
-     
-
-     <!-- <input type="date"  name="debut-voyage" class="field-divided"
-       value="12-02-2021"/>
-
-
-       <input type="date"  name="retour-voyage" class="field-divided"
-       value="12-02-2021"/> -->
 
 
         <select name="type" class="field-divided">
@@ -80,7 +74,7 @@
 
     <textarea name="message" id="message" class="field-long field-textarea" placeholder="Projet de séjour"></textarea>
                  
-     <input type="checkbox" name="field5"> J’accepte d’être recontacté.e par Vert-Galant Voyages et ses partenaires. 
+     <input type="checkbox" name="field5"> J’accepte d’être recontacté.e par Vert-Galant Voyages et ses partenaires.  
                     
                 
     <input type="submit" value="envoyer" />
@@ -113,12 +107,13 @@
                 <strong> vert-galant-voyages@orange.fr </strong>
             </p>
 
+            <div id="facebook-et-map"> 
         <!-- icone facebook -->
             <a href="https://www.facebook.com/vertgalantvoyages" target="blank">
             <i class="fab fa-facebook"> </i></a> 
         <!-- carte leaflet    -->
             <div id="map"></div>
-            
+            </div>
         
     </div>
 

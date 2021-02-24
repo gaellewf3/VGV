@@ -8,6 +8,7 @@
             <div id="cap">
                 <h1>Cap sur les Maldives ! </h1>
                 <p>Offre spéciale <br> <strong>-20% </strong> </p>
+
                 <div class="bouton">
                     <p>
                     <a href="#">En savoir +</a>
@@ -71,44 +72,56 @@
                    </div>
                </div>
   
-<div class="carte">
-            <div class="image-carte"> </div>
+               <div class="carte">
+
+<div class="image-carte"> </div>
+         <div class="description">  
+             <h4>Last</h4>
+                 <p>Passez 4 jours en Thalasso à Djerba </p>
+           
+                 <a href="#" class="bouton_voir">Voir</a>
+
+
+                       <div class="prix">
+                             <p>399€</p>
+                         </div>
+
+                       </div>
+                   </div>
+               </div>
+
+
+    <div class="carte">
+
+             <div class="image-carte"> </div>
                       <div class="description">  
-                               <h4>Last</h4>
-                                  <p>Goutez à l’été indien au Québec </p>
-                                  <a href="#" class="bouton_voir">Voir</a>
-
-   
-                                  <div class="prix">
-                                      <p>399€</p>
-                                  </div>
-                               </div>
-                            </div>
-                      </div>
-
-      <div class="carte">
-           <div class="image-carte"> </div>
-                         <div class="description">  
-                                 <h4>Last</h4>
-                                      <p>Lorem ipsum lorem ipsum </p>
-                                       
-                                      <a href="#" class="bouton_voir">Voir</a>
+                          <h4>Last</h4>
+                              <p>Passez 4 jours en Thalasso à Djerba </p>
+                        
+                              <a href="#" class="bouton_voir">Voir</a>
 
 
-                                     <div class="prix">
+                                    <div class="prix">
                                           <p>399€</p>
-                                     </div>
-                          
-                                   </div>
-                               </div>
+                                      </div>
+        
+                                    </div>
+                                </div>
                             </div>
-                        </div>
 
-            <div id="bouton">
-                <div class="gros_bouton_voir">
+
+         
+                <div class="bouton_voir_tous_page_index1">
                     <a href="offres.php">Voir tous nos voyages</a>
                 </div>
-            </div>
+           
+
+                        
+
+
+  <!------ bouton Voir tous nos voyages ----->
+
+           
 
 
 <div class="clear"></div>
@@ -244,12 +257,13 @@
                     <strong> vert-galant-voyages@orange.fr </strong>
                 </p>
 
+                <div id="facebook-et-map"> 
             <!-- icone facebook -->
                 <a href="https://www.facebook.com/vertgalantvoyages" target="blank">
                 <i class="fab fa-facebook"> </i></a> 
             <!-- carte leaflet    -->
                 <div id="map"></div>
-                
+                </div>
             
         </div>
 

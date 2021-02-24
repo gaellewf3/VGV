@@ -72,12 +72,12 @@
 function showtab(cartename) 
 { 
 	// hide every element with class 'tab'  
-	var cartes = getElementsByClass('lm');
-	for(i=0; i<cartes.length; i++) 
-		cartes[i].style.display = 'none';
+	var carte = getElementsByClassName('lm');
+	for(i=0; i<carte.length; i++) 
+		carte[i].style.display = 'none';
 	// hide every element with class 'tab'		 
  
-	document.getElementsByClass('lm').style.display='block';
+	document.getElementsByClassName('lm').style.display='block';
 	// show element with given tabname 
 
 }

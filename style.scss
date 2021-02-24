@@ -58,13 +58,12 @@ header img {
 
 
 #accueil {
-	/* width: 100%;*/
-    height: 480px; 
+    padding-bottom: 480px; 
     background: url(../VGV/img/plage_accueil.jpg) no-repeat center center; 
     background-repeat:no-repeat;
     background-size: cover;
-    /* position:relative; */
-    top:120px;left:0px;
+    top:120px;
+    left:0px;
     margin-top:120px;
 }
 
@@ -77,6 +76,8 @@ header img {
     margin: 80px 0 10px 140px;
 
 } 
+
+
 
 #accueil h1 {
     font-size: 40px;
@@ -93,16 +94,18 @@ header img {
     padding: 15px 0 0 15px;
 }
 
-.bouton {
-    margin-left: -15px;
+.bouton  {
+  margin-left: -15px;
 
 }
+
+
 .bouton a {
-    font-size: 24px;
-    text-decoration: none;
-    color: white;
-    padding: 18px auto 8px auto;
-    background-color: #00E300;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  padding: 18px auto 8px auto;
+  background-color: #00E300;
 }
  
 #accueil #offre { 
@@ -157,59 +160,7 @@ header img {
 }
 
 
-//////////////////////// cartes ///////////////// 
-
-// #blocToutes { 
-//   display: block;
- 
-// } 
-
-
-// #blocLastResponsive{
-//   display: none; 
-//   float: left;
-//   width: 100%;
-//   margin: 50px 400px;
-//  }
-
-// #blocLongResponsive{
-//   display: none; 
-//   float: left;
-//   width: 100%;
-//   margin: 50px 400px;
-// }
-
-// #blocMoyenResponsive{
-//   display: none; 
-//   float: left;
-//   width: 100%;
-//   margin: 50px 400px;
-// }
-
-// #blocCCResponsive{
-//   display: none; 
-//   float: left;
-//   width: 100%;
-//   margin: 50px 400px;
-// }
-
-// #blocDiversResponsive{
-//   display: none; 
-//   float: left;
-//   width: 100%;
-//   margin: 50px 400px;
-// }
-
- 
-// page index
-// .cartes { 
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: nowrap;
-//     justify-content: space-around;
-//     align-items: baseline;
-//     align-content: space-between;
-// } 
+//**************** cartes ***************/// 
 
 
  // page index
@@ -269,28 +220,39 @@ h4 {
 
 }
 
+// ****************** bouton voir page index1 ************
+
+
+
+ 
+
  // page index
-.gros_bouton_voir{
-    background-color: #00E300;
-    border: none;
-    padding: 3px 5px;
-    text-align: center;
-    display: inline-block;
+.bouton_voir_tous_page_index1{
     cursor: pointer;
+    background-color: #00E300;
     text-align: center;
-    margin: 30px 825px;
+    // width: 250px;
+    // height: 35px;
+     margin: 30px 650px ;
+  padding: 15px;
+  display: inline-block;
+  // margin: auto;
   }
 
  // page index
-.gros_bouton_voir a {
+.bouton_voir_tous_page_index1 a {
+
   font-size: 24px;
   text-decoration: none;
   font-weight: normal;
   color: white;
 }
 
+ 
 
-////////////////// Pourquoi nous choisir ///////////////////
+
+
+//****** SECTION Pourquoi nous choisir PAGE INDEX1 *******//
 
 #choisir {
   background: url(../VGV/img/feuille.png); 
@@ -321,7 +283,6 @@ h4 {
   width: 25%;
   padding: 0 10px;
   box-sizing: border-box;
-  /* border: 1px solid black; */
  }
 
  
@@ -340,7 +301,7 @@ h4 {
  }
 
 
- ////////////////////// Newsletter ////////////////
+ //.... section Newsletter page INDEX1////////////////
 
   #newsletter{ 
     background: url(../VGV/img/moussa2.jpg); 
@@ -398,7 +359,7 @@ h4 {
       }
   
 
-//////////////// Qui sommes-nous ///////////////
+//**** section Qui sommes-nous page INDEX1//
 
 
       #qui {
@@ -454,11 +415,11 @@ h4 {
         }
 
 
-////////////////// contact ///////////////// 
+//******* section contactez-nous page index1 *******// 
 
    #contact {
       width: 100%;
-      // height: 700px;
+      height: 750px;
       background-color: #e3fce3;            
     }
 
@@ -474,7 +435,7 @@ h4 {
     #infos-pratique {
         display: flex;
          margin: auto;
-       width: 50%;
+       width: 55%;
     } 
 
      .content-info {
@@ -515,12 +476,11 @@ h4 {
 
       }
 
-/************ formulaire contact *********/
+/******* formulaire contact section Contactez-nous*********/
  
 #bloc-form {
-  width: 50%;
+  width: 81%;
 }
-
  
 .form-style-1   {
 	max-width: 500px;
@@ -597,27 +557,17 @@ select{
 	-moz-box-shadow:none;
 	-webkit-box-shadow:none;
 }
-.form-style-1 .required{
-	color:red;
-}
-
 
 
 /******************** PAGE OFFRES *****************/
  
 
-.lm {
-  display:none;     
-}
-
 #accueil-offres {
-    //  height: 480px; 
-    background: url(../VGV/img/map.jpeg) no-repeat  center; 
+     
+    background: url(../VGV/img/background-page-offres.png) ; 
     background-repeat:no-repeat;
     background-size: cover;
-    //  top:120px;
-    //  left:0px;
-    // margin-top:120px;
+    padding-top: 190px;
 }
 
 #accueil-offres h1 {
@@ -625,40 +575,30 @@ select{
     font-size: 40px;
     color: #00e300;
     font-weight : normal; 
-
 }
 
 
 .rect-blanc {
-    border: 1px black solid;
-    padding: 10px 30px;
-    width: 560px;
     background-color: white;
-    // margin: 0 auto;  
-    margin-top: 100px;
-    // margin: 80px 0 10px 140px;
-
-}
-
-.lm1 {
-  display: none;
-}
- 
- 
+    margin: auto;
+    width:600px;
+    height: 50px;
+  }
 
  
-//////////////// choix voyage //////////////
+ 
+//************** choix voyage ***********//
 
 
  /* barre de recherche */
 
 #choixVoyage {
-    border: 1px solid black;
+    // border: 1px solid black;
 	  display: flex;
     justify-content: center;    
-    margin-top: 300px;
-    background:rgba(255,255,255, 0.5);
-
+    margin-top: 150px;
+    // background:rgba(255,255,255, 0.5);
+   
  }
   
  #choixVoyage p {
@@ -668,15 +608,15 @@ select{
 
 
  .btnVoyage {
-	color: #00E300;
+   color: #00E300;
     background-color: #ffffff;
     border: 1px solid #00E300;
-	border-radius: 5px;
-	font-size: 16px;
-	text-decoration: none;
-	font-weight: bold;
-	padding: 10px;
-	margin: 5px 20px;
+	  border-radius: 5px;
+	  font-size: 16px;
+	 text-decoration: none;
+	 font-weight: bold;
+	 padding: 10px;
+	 margin: 5px 20px;
 }
 
 .btnVoyage:hover {
@@ -697,55 +637,6 @@ select{
 	padding: 10px;
 }
 
-// #carre0 {
-// 	width: 20px;
-// 	height: 20px;
-// 	background-color: white;
-//     border: 1px solid black;
-//     border-radius: 5px;
-// }
-
-// #carre1 {
-// 	width: 20px;
-// 	height: 20px;
-// 	background-color: white;
-//     border: 1px solid black;
-//     border-radius: 5px;
-// }
-
-// #carre2 {
-// 	width: 20px;
-// 	height: 20px;
-// 	background-color: white;
-//     border: 1px solid black;
-//     border-radius: 5px;
-// }
-
-// #carre3 {
-// 	width: 20px;
-// 	height: 20px;
-// 	background-color: white;
-//     border: 1px solid black;
-//     border-radius: 5px;
-// }
-
-// #carre4 {
-// 	width: 20px;
-// 	height: 20px;
-// 	background-color: white;
-//     border: 1px solid black;
-//     border-radius: 5px;
-// }
-
-// #carre5 {
-// 	width: 20px;
-// 	height: 20px;
-// 	background-color: white;
-//     border: 1px solid black;
-//     border-radius: 5px;
-// }
-
-
 
 ////// dernieres offres   /////// 
 
@@ -759,99 +650,33 @@ select{
     margin: 0 auto;
   }
 
- 
 
-
-//  .displayVoyage{ 
-// 	display: none;
-// }
-
-
-#blocLast { 
-  width: 100%;
-  padding: 25%;
-    // float: left;
-    // margin: 30px;
-    // width: 355px;
-  	// height: 360px;
-    // border: grey solid 1px;
-    // background-color: white;
- 
-  } 
-
-
-
-//  #blocLong { 
-//     margin: 30px;
-//     width: 355px;
-//   	height: 360px;
-//     border: grey solid 1px;
-//     background-color: white;
-//     display: none;
-//  } 
-
-
-//  #blocMoyen { 
-   
-//     margin: 30px;
-//     width: 355px;
-//   	height: 360px;
-//     border: grey solid 1px;
-//     background-color: white;
-//     display: none;
-
-//  } 
-
-//  #blocCroisiereCircuit { 
-//      margin: 30px;
-//     width: 355px;
-//   	height: 360px;
-//     border: grey solid 1px;
-//     background-color: white;
-//      display: none;
-//  }
-
-              
-//  #blocDivers { 
-    
-//     margin: 30px;
-//     width: 355px;
-//   	height: 360px;
-//     border: grey solid 1px;
-//     background-color: white;
-//      display: none;
-//  } 
- 
- 
 
 // ********************** PAGE RESERVATION *********************// 
 
-#demande-banniere{
-    background: url(../VGV/img/map22.png)no-repeat ;
-    height: 220px;
-    // background-repeat:no-repeat;
+#banniere-page-reservation{
+    background-image: url(../VGV/img/map22.jpg) ; 
+    background-repeat:no-repeat;
     background-size: cover;
-    top:120px;
-    left:0px;
-    margin-top:120px;
-}
- 
- 
- #rect {
-   
-   background-color: white;
-   width: 800px;
-  	// margin: 200px auto 0 auto;
-    margin:auto;
- 	 padding: 30px;
+    margin-top: 120px;   
+    padding: 150px 0 150px 0;
  }
+ 
+
+ #rectangle-demande-reservation {
+      background-color: white;
+      margin:  auto;
+      width: 460px;
+      height:50px;
+      
+  }
 
   
- #rect h1 {
+  #rectangle-demande-reservation h1 {
   font-size: 36px;
    color: #00E300;
    text-align: center;
-
+   font-weight : normal; 
 }
  
 #demande-formulaire {
@@ -871,7 +696,10 @@ select{
   margin: auto;
 }
  
- 
+ #facebook-et-map {
+   display: flex;
+   flex-wrap: nowrap;
+ }
   
 
 /********** FOOTER **********/ 
@@ -929,12 +757,39 @@ select{
 }
 
 
+#hamburger {
+  width: 10px;
+  display: none;
+
+}
+
+#menuResponsive{
+
+  display: none;
+  position: absolute;
+  background-color: white;
+  margin: auto;
+  width: 100%;
+  padding: 5px; 
+  // top:200px;
+  // right: 10px;
+}
+
+#menuResponsive a {
+  text-decoration: none;
+  color: gray;
+  left: 10%;
+  // padding: 20px;
+
+}
+
  
+ 
+
 //////////////////// RESPONSIVE //////////////////
 
 // page index
 
-  
 @media screen and (max-width: 350px) {
  
 	section {
@@ -943,42 +798,113 @@ select{
  	}
 //header 
 
+	#hamburger {
+		display: block;   
+    width: 40px;
+    height: 40px;     
+	}
 
+  #navResponsive{
+    background-color: #fff;
+  }
+
+	 nav a {
+		display: none;
+	}
  
 
+ //*** encadré CAP sur les MALDIVES responsive **
+
+#accueil #cap { 
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 150px;
+  height: 125px;
+  margin: 50px 0 10px 140px;
+}
+
+#accueil h1 {
+  font-size: 13px;
+}
+
+#accueil p {
+  font-size: 17px;
+  color: white;
+  font-weight : normal; 
+  padding: 15px 0 0 15px;
+}
+
+.bouton  {
+margin-left: -15px;
+}
 
 
-// decouvrer les dernieres offres
+.bouton a {
+font-size: 13px;
+}
+
+ //*** encadré offres LAST MIN responsive**
+
+ #accueil #offre { 
+  background-color: rgba(0, 0, 0, 0.2);
+  background: url(../VGV/img/ski2.png) no-repeat center; 
+  background-size: 130px;
+  border: 4px solid white; 
+  width: 123px;
+  height: 220px;
+  margin: 10px 140px 10px 0;
+} 
+
+#accueil h2 {
+  font-size: 16px;
+}
+
+.bouton2 {
+  margin-left: -13px;
+  margin-top: 130px;
+}
+.bouton2 a {
+  font-size: 14px;
+}
+
+//***section découvrez les dernieres offres
 
 #dernieres_offres {
 height: 1300px;
 }
 
 #dernieres_offres h3 {
-  font-size: 35px;
-	margin: 30px 0 0 0;
-}
+  font-size: 25px;
+  margin-top: -40px;
+ }
+
+
 
 // **responsive
-.cartes { 
-  display: grid;
- //   margin: 30px 0;
-// display: block;
  
-} 
+.carte { 
+
+  width: 90%;
+    margin: 3.4%;
+ } 
+ 
+ // page index
+.image-carte {
+    height: 140px;
+  
+}
+ 
 
 
-
-
-//  pourquoi nous choisir 
+//*** Section pourquoi nous choisir ***********
 
 #choisir {
-  height: 450px;
+  height: 300px;
 }
 
  #choisir h3 {
-	font-size: 35px;
-	margin: 30px 0 0 0;
+	font-size: 25px;
+  margin-top: -40px;
+	// margin: 30px 0 0 0;
 }
  
 .icons {
@@ -1001,7 +927,7 @@ height: 1300px;
    height: 50px;
   }
 
-  /////////// Newsletter
+  //******* Newsletter resp ******
 
   #newsletter {
     height: 200px;
@@ -1037,38 +963,18 @@ height: 1300px;
 // A REVOIR !!!!
 
     #qui {
-      height: 800px;
+      height: 700px;
     }
 
     #qui h3{ 
-      font-size: 30px;
-      margin: 10px 0 0 0;
-    }
-
-    #bloc-gauche img{
-       width: 100%;
-        margin: auto; 
-    }
-
-    #bloc-gauche {
-       width: 100%;
-       display: block;
-    }
-
-    #bloc-droit {
-      display: block;
-      width: 100%;
-    }   
-
-    #bloc-bio p {
-      font-size: 20px;
-      line-height: 25px;  
-      text-align: center;    
+      font-size: 25px;
+      margin-top: -40px;
     }
 
     .ligne {
       width: 100%;
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
     }
 
 
@@ -1077,58 +983,92 @@ height: 1300px;
       display: block;
     }
 
-    /////// Contactez-nous 
+
+    #bloc-gauche img{
+      width: 250px;
+      height: 200px;
+      margin: auto;
+      // margin-left: auto;
+      // margin-right: auto;
+     }
+
+    #bloc-gauche {
+      // display: block;
+      padding: 0px;
+      margin: auto;
+    }
+
+    #bloc-droit {
+      display: block;
+      padding: 0px;
+    }   
+
+    #bloc-bio p {
+      font-size: 20px;
+      line-height: 23px;  
+      text-align: center;    
+    }
 
 
+
+   
+    //**** Contactez-nous Resp ***
     #contact {
       height: 1000px;
     }
 
     #contact h3{ 
-      font-size: 30px;
-      margin: 10px 0 0 0;
+      font-size: 25px;
+      margin-top: -40px;
     }
 
-    #contact div {
-      width: 50%;
-    }
-
+   
     #infos-pratique {
-      width: 100%;
-    } 
+       display: flex;
+       margin: auto;
+       width: 55%;
+       flex-wrap: wrap;
+  } 
 
-    .content-info {
-      width: 100%;
-      display: block;
-    }
-
-    .content-info p{
-
-      font-size: 15px;
-      text-align: center;
-    }
-
-
-    .content-info span {
-      font-size: 16px ;
-    }
-  
-
-  .fab{
-    display: block;
-    margin: 10px 25px;
+   .content-info {
+  width: 100%;
   }
 
-// *responsive*
-  #map { 
-    display: block;
-    width: 100%;
-   }
+  .content-info p{
+    max-width: 300px;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
 
-   // *responsive*
 #bloc-form {
-  float: right;
+  width: 100%;
 }
+    // .content-info span {
+    //   font-size: 24px;
+    //   text-transform: uppercase;
+    //   font-weight: bold;
+    //   color: #00E300;
+    // }
+
+
+    .fab{
+      font-size: 70px;
+      color: #00E300;
+      float: left;
+      margin: 10px;
+
+    }
+
+
+    #map { 
+      float: right;
+      width: 200px;
+      height: 200px; 
+       margin: 10px;
+
+    }
+
 
 
 ///footer 
