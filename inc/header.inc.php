@@ -28,7 +28,12 @@
 <body>
 
 <header>
-			<nav>
+
+<div class="bordureMenuBurger">
+        <img src="img/burger.png" class="mobile" id="burger">
+        </div>
+
+            <nav id="menu">
 	 			<a href="index1.php">Accueil</a>
 				<a href="offres.php">Nos offres</a>
                 <img src="img/logo/logo_sans_fond.png" alt="logo agence vert-galant"/>
@@ -36,23 +41,6 @@
 				<a href="reservation.php#contact">Contact</a>
                  
 			</nav>	
-
-	 
-            <nav id="navResponsive">
-					<img src="img/burger.png" id="hamburger" >
-				</div>
-				</nav>
-
-
-            <div id="menuResponsive">  
-						<ul> 
-							<li> <a href="index1.php">Accueil</a></li><br>
-							<li><a href="offres.php">Nos offres</a></li><br>
-						    <li><a href="#reservation.php">Réservation</a></li><br>
-						    <li><a href="reservation.php#contact">Contact</a></li><br>
-										 
-						</ul>
-					</div> 
 
 
 </header>

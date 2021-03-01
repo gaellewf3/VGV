@@ -13,22 +13,62 @@ var mymap = L.map("map").setView([ 48.56300,2.34268], 13);
 
 // ------------ menu burger responsive -------------
 
-var hamburger = document.getElementById('hamburger');
-// je cible la balise burger
-console.log(hamburger);
+// var hamburger = document.getElementById('hamburger');
+// var menuResp = document.getElementById('menuResponsive');
+// hamburger.addEventListener('click', function(){
+// 	console.log('test depuis addEventListener');
+
+// 	if (menuResp.style.display == 'block') {
+// 		menuResp.style.display = 'none';
+// 	}else{
+// 		menuResp.style.display = 'block';
+// 	}
+// })
 
 
-//je cible la div
-var menuResp = document.getElementById('menuResponsive');
+
+var burger = document.getElementById('burger');
+var menu = document.getElementById('menu');
+ 
+
+ burger.addEventListener('click', apparitionMenu);
+
+ function apparitionMenu() {
 
 
-hamburger.addEventListener('click', function(){
-	console.log('test depuis addEventListener');
-
-	if (menuResp.style.display == 'block') {
-		menuResp.style.display = 'none';
-	}else{
-		menuResp.style.display = 'block';
+	if (menu.style.display === 'block') {
+ 		menu.style.display = 'none';
+ 		burger.src = 'img/burger.png';
+	} else {
+		menu.style.display = 'block';
+		burger.src = 'img/cross.png';
 	}
-})
+}
 
+
+
+
+
+
+
+
+
+
+// ------------ alerte form  -------------
+
+document.getElementById('field5').addEventListener('click', checkForm);
+
+function checkForm() {
+	var checkbox = document.getElementById("field5");
+							 
+	if (checkbox.checked == true){
+		document.getElementById("envoyerForm").disabled = false;
+	} else {
+		document.getElementById("envoyerForm").disabled = true;
+	}
+}
+
+
+
+
+ 

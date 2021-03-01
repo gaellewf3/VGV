@@ -53,33 +53,37 @@ header img {
 }
 
 
+#burger {
+    display: none;
+}
+ 
+
+
 
 // ********************** PAGE INDEX *********************// 
 
 
-#accueil {
-    padding-bottom: 480px; 
+#banniere-page-index {
     background: url(../VGV/img/plage_accueil.jpg) no-repeat center center; 
     background-repeat:no-repeat;
     background-size: cover;
-    top:120px;
-    left:0px;
-    margin-top:120px;
+    padding: 120px;
 }
 
- 
-#accueil #cap { 
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 450px;
-  	height: 248px;
-    float: left;
-    margin: 80px 0 10px 140px;
 
-} 
+.ligne-banniere-page-index {
+  width: 100%;
+  display: flex;
+}
+
+.carte-cap {
+  width: 35%;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 80px 0 10px 100px;
+}
 
 
-
-#accueil h1 {
+.carte-cap h1 {
     font-size: 40px;
     color: #00e300;
     font-weight : normal; 
@@ -87,66 +91,57 @@ header img {
     background-color: white;
 }
 
-#accueil p {
+.carte-cap p {
     font-size: 45px;
     color: white;
     font-weight : normal; 
-    padding: 15px 0 0 15px;
+     padding: 45px 0px 59px 15px;
 }
 
-.bouton  {
-  margin-left: -15px;
-
-}
-
-
-.bouton a {
+.button-cap   {
   font-size: 24px;
   text-decoration: none;
   color: white;
-  padding: 18px auto 8px auto;
   background-color: #00E300;
 }
  
-#accueil #offre { 
-    background-color: rgba(0, 0, 0, 0.2);
-    background: url(../VGV/img/ski2.png) no-repeat center; 
-    /* background-size: 100%; */
-    background-size: 351px;
-    border: 4px solid white; 
-    width: 290px;
-	  height: 420px;
-    float: right;
-    margin: 10px 240px 10px 0;
-} 
 
-#accueil h2 {
-    font-size: 34px;
+.carte-offre {
+  background: url(../VGV/img/ski2.png) no-repeat center; 
+  background-size: cover;
+  border: 4px solid white; 
+  width: 20%;
+  margin: 50px 10px 10px 300px;
+  
+}
+
+.carte-offre h2 {
+    font-size: 30px;
     color: #00e300;
     font-weight : normal; 
-    padding: 10px;
+    padding: 5px;
     background-color: white;
 }
 
-.bouton2 {
-    margin-left: -13px;
-    margin-top: 297px;
+  .button-offre   {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+  background-color: #00E300;
+  display: block;
+  width: 80%;
+  display: inline-block;
+  margin: 250px 0px 0px 0px;
 }
-.bouton2 a {
-    font-size: 24px;
-    text-decoration: none;
-    color: white;
-    padding: 18px auto 8px auto;
-    background-color: #00E300;
-}
+
+ 
 
 
-
+ 
 ///////////////////// dernieres offres ////////////////
 
 #dernieres_offres {
     width: 100%;
-    // height: 620px;
     background-color: #e3fce3;
  }
 
@@ -166,8 +161,8 @@ header img {
  // page index
 
 .carte { 
-  width: 20%;
-   float: left;
+    width: 20%;
+    float: left;
     border: grey solid 1px;
     background-color: white;
     margin: 2.4%;
@@ -223,34 +218,38 @@ h4 {
 // ****************** bouton voir page index1 ************
 
 
-
  
 
  // page index
-.bouton_voir_tous_page_index1{
-    cursor: pointer;
-    background-color: #00E300;
-    text-align: center;
-    // width: 250px;
-    // height: 35px;
-     margin: 30px 650px ;
-  padding: 15px;
-  display: inline-block;
-  // margin: auto;
-  }
-
- // page index
-.bouton_voir_tous_page_index1 a {
-
+.bouton_voir a {
+  cursor: pointer;
+  background-color: #00E300;
+  text-align: center;
   font-size: 24px;
   text-decoration: none;
   font-weight: normal;
   color: white;
+ 
+  display: block;
 }
 
  
+.bouton_voir_tout {
+  background-color: #00E300;
+  text-align: center;  
+  display: block;
+  margin: 10px auto 30px auto;
+  width: 300px;
+  // height: 43px;
+  text-decoration: none;
+  color:white;
 
+  font-size: 28px;
+  text-align: center;
+  font-weight: normal;
+}
 
+ 
 
 //****** SECTION Pourquoi nous choisir PAGE INDEX1 *******//
 
@@ -290,7 +289,7 @@ h4 {
    font-size: 16px;
    text-align: center;
    line-height: 25px;
-   padding: 40px 0 0 0 ;
+   padding: 14px 0 20px 0 ;
   }  
 
  
@@ -307,7 +306,7 @@ h4 {
     background: url(../VGV/img/moussa2.jpg); 
     background-size: cover;
     background-attachment: fixed; 
-    height: 480px; 
+    // height: 480px; 
 
     } 
 
@@ -361,7 +360,6 @@ h4 {
 
 //**** section Qui sommes-nous page INDEX1//
 
-
       #qui {
         background: url(../VGV/img/feuille.png); 
         background-position: center;
@@ -391,26 +389,23 @@ h4 {
       
 
         #bloc-gauche {
-            padding: 0px 50px 0px 300px;
-        }
-
-        #bloc-droit {
-            padding: 0px 200px 0 0px;
+          width: 50%;
         }
 
         #image-agence img{
-          width: 510px;
-          height: 400px;  
-
-       
+          width: 90%;
+         padding: 50px 50px 0px 300px;
+  
         }
 
+        #bloc-droit {
+          width: 50%;
+        }
 
         #bloc-bio p {
           text-align: justify;
           padding: 70px 0 10px 0 ;
           line-height: 25px; 
-        /* float: right;   */
 
         }
 
@@ -419,8 +414,7 @@ h4 {
 
    #contact {
       width: 100%;
-      height: 750px;
-      background-color: #e3fce3;            
+      background-color: #e3fce3; 
     }
 
     #contact h3{ 
@@ -436,6 +430,8 @@ h4 {
         display: flex;
          margin: auto;
        width: 55%;
+       padding: 30px;           
+
     } 
 
      .content-info {
@@ -462,17 +458,18 @@ h4 {
       .fab{
         font-size: 70px;
         color: #00E300;
-        float: left;
+        // float: left;
+        // apres le float, on met clear both
         margin: 10px;
+
 
       }
 
 
       #map { 
-        float: right;
-        width: 200px;
+        // float: right;
+        width: 100%;
         height: 200px; 
-         margin: 10px;
 
       }
 
@@ -483,7 +480,7 @@ h4 {
 }
  
 .form-style-1   {
-	max-width: 500px;
+	max-width: 550px;
 	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	padding: 20px;
 	display: block;
@@ -552,12 +549,25 @@ select{
 
 }
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
-	background: black;
+	background: #00e300;
 	box-shadow:none;
 	-moz-box-shadow:none;
 	-webkit-box-shadow:none;
 }
 
+
+input[type=checkbox] {
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+}
+
+input[type=submit]:disabled {
+  cursor: not-allowed;
+  background: black;
+}
 
 /******************** PAGE OFFRES *****************/
  
@@ -593,12 +603,11 @@ select{
  /* barre de recherche */
 
 #choixVoyage {
-    // border: 1px solid black;
+     
 	  display: flex;
     justify-content: center;    
     margin-top: 150px;
-    // background:rgba(255,255,255, 0.5);
-   
+ 
  }
   
  #choixVoyage p {
@@ -694,6 +703,7 @@ select{
   background-color: #e8e8e8;
   width: 550px;
   margin: auto;
+
 }
  
  #facebook-et-map {
@@ -705,7 +715,7 @@ select{
 /********** FOOTER **********/ 
 
  footer{
-    bottom: 0;
+   bottom: 0;
    width: 100%;
    height: 240px;
    background-color: #00e300;
@@ -730,14 +740,13 @@ select{
 .copyright {
   color: white;
   text-align: center;
-  padding: 3%;
+  // padding: 3%;
   line-height: 25px;
 }
 
 .copyright a {
   text-decoration: none;
   color: white;
-
 }
 
 .copyright a:hover {
@@ -747,7 +756,7 @@ select{
 .logo {
   color: white;
   text-align: center;
-  padding: 3%;
+  // padding: 3%;
   line-height: 25px;
 }
 
@@ -757,36 +766,74 @@ select{
 }
 
 
-#hamburger {
-  width: 10px;
-  display: none;
+// #hamburger {
+//   width: 10px;
+//   display: none;
 
-}
+// }
 
-#menuResponsive{
+// #menuResponsive{
+//   display: none;
+//   position: absolute;
+//   background-color: white;
+//   margin: auto;
+//   width: 100%;
+//   padding: 5px; 
+  
+// }
 
-  display: none;
-  position: absolute;
-  background-color: white;
-  margin: auto;
-  width: 100%;
-  padding: 5px; 
-  // top:200px;
-  // right: 10px;
-}
+// #menuResponsive a {
+//   text-decoration: none;
+//   color: gray;
+//  display:block;
+//  padding: 20px;
+//  font-size: 25px;
 
-#menuResponsive a {
-  text-decoration: none;
-  color: gray;
-  left: 10%;
-  // padding: 20px;
-
-}
+// }
 
  
  
 
 //////////////////// RESPONSIVE //////////////////
+
+@media  screen and (max-width: 1000px){
+  
+  .bordureMenuBurger{
+    width: 100%;
+   }
+
+  .mobile{
+    display: block;
+    width: 10%;
+    margin: auto;
+    
+  }
+
+  #burger {
+    display: block;
+}
+ #menu {
+   display: none;
+   position: absolute;
+   background-color: white;
+   margin: auto;
+   width: 100%;
+   padding: 5px; 
+ }
+ 
+#menu a {
+  text-decoration: none;
+     color: gray;
+   display:block;
+   padding: 20px;
+  font-size: 25px;
+ }
+ #menu img {
+   display: none;
+ }
+}
+
+
 
 // page index
 
@@ -798,40 +845,40 @@ select{
  	}
 //header 
 
-	#hamburger {
-		display: block;   
-    width: 40px;
-    height: 40px;     
-	}
+//efface #hamburger
+	// #hamburger {
+	// 	display: block;   
+  //   width: 40px;
+  //   height: 40px;     
+	// }
 
-  #navResponsive{
-    background-color: #fff;
-  }
+  // #navResponsive{
+  //   background-color: #fff;
+  // }
 
-	 nav a {
-		display: none;
-	}
+	//  nav a {
+	// 	display: none;
+	// }
  
 
- //*** encadré CAP sur les MALDIVES responsive **
+ /***** encadré CAP sur les MALDIVES responsive *****/
 
 #accueil #cap { 
   background-color: rgba(0, 0, 0, 0.2);
-  width: 150px;
-  height: 125px;
-  margin: 50px 0 10px 140px;
+  width: 90%;
+  float: none;
+  // height: 125px;
+  // mettre des height cest fixe, on evite
+  margin: auto;
 }
 
 #accueil h1 {
-  font-size: 13px;
+  font-size: 20px;
 }
 
 #accueil p {
   font-size: 17px;
-  color: white;
-  font-weight : normal; 
-  padding: 15px 0 0 15px;
-}
+  }
 
 .bouton  {
 margin-left: -15px;
@@ -839,19 +886,17 @@ margin-left: -15px;
 
 
 .bouton a {
-font-size: 13px;
+font-size: 20px;
 }
 
  //*** encadré offres LAST MIN responsive**
 
  #accueil #offre { 
-  background-color: rgba(0, 0, 0, 0.2);
-  background: url(../VGV/img/ski2.png) no-repeat center; 
   background-size: 130px;
   border: 4px solid white; 
-  width: 123px;
-  height: 220px;
-  margin: 10px 140px 10px 0;
+  // width en pourcentage car fluide
+  width: 90%;
+  margin: auto;
 } 
 
 #accueil h2 {
@@ -859,12 +904,23 @@ font-size: 13px;
 }
 
 .bouton2 {
-  margin-left: -13px;
+  // margin-left: -13px;
   margin-top: 130px;
 }
+
 .bouton2 a {
   font-size: 14px;
 }
+
+
+.bouton_voir_tout {
+  width: 150px;
+  // height: 40px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+
 
 //***section découvrez les dernieres offres
 
@@ -897,9 +953,7 @@ height: 1300px;
 
 //*** Section pourquoi nous choisir ***********
 
-#choisir {
-  height: 300px;
-}
+
 
  #choisir h3 {
 	font-size: 25px;
@@ -908,29 +962,29 @@ height: 1300px;
 }
  
 .icons {
-	display: flex;
+	// display: flex;
   padding: 30px;
   margin: auto;
 
 } 
 
  .content-icon p{
-  font-size: 8px;
-  line-height: 9px;
+  font-size: 14px;
+  // line-height: 9px;
   text-align: center;
   }
 
   // responsive
   .content-icon img {
    margin: auto;
-   display: flex;
+  //  display: flex;
    height: 50px;
   }
 
   //******* Newsletter resp ******
 
   #newsletter {
-    height: 200px;
+    // height: 200px;
     background-attachment: cover;
     // background-size: 100% 100%;
   }
@@ -942,7 +996,7 @@ height: 1300px;
   }
 
     #newsletter p {
-      font-size: 10px;
+      font-size: 20px;
   }
     
     #barre {
@@ -952,6 +1006,7 @@ height: 1300px;
       padding: 20px 0 30px 0;
     }
 
+    // passer la barre en dessous
     #validate {      
         padding: 5px 10px;
         font-size: 10px;
@@ -987,20 +1042,19 @@ height: 1300px;
     #bloc-gauche img{
       width: 250px;
       height: 200px;
-      margin: auto;
-      // margin-left: auto;
-      // margin-right: auto;
+      margin: 0px 40px;
+     
      }
 
     #bloc-gauche {
-      // display: block;
-      padding: 0px;
+      padding: 0px 0px 0px 0px;
       margin: auto;
     }
 
+    //resp
     #bloc-droit {
       display: block;
-      padding: 0px;
+      padding: 20px;
     }   
 
     #bloc-bio p {
@@ -1014,7 +1068,7 @@ height: 1300px;
    
     //**** Contactez-nous Resp ***
     #contact {
-      height: 1000px;
+      // height: 1400px;
     }
 
     #contact h3{ 
@@ -1026,7 +1080,7 @@ height: 1300px;
     #infos-pratique {
        display: flex;
        margin: auto;
-       width: 55%;
+       width: 90%;
        flex-wrap: wrap;
   } 
 
@@ -1041,33 +1095,146 @@ height: 1300px;
     text-align: center;
   }
 
+// #bloc-form {
+//   width: 100%;
+// }
+    
+#facebook-et-map{
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.fab {
+// padding: 0px 20px 0px 30px;
+display:block;
+text-align: center;
+}
+
+#map {
+
+  z-index: 0;
+}
+ 
 #bloc-form {
+  display: flex;
   width: 100%;
 }
-    // .content-info span {
-    //   font-size: 24px;
-    //   text-transform: uppercase;
-    //   font-weight: bold;
-    //   color: #00E300;
-    // }
+
+.form-style-1{
+display: block;
+  width: 80%;
+	// margin: 10px 10px 10px 10px;
+}
+ 
+.field-textarea{
+  margin: auto;
+  padding: 10px;
+}
 
 
-    .fab{
-      font-size: 70px;
-      color: #00E300;
-      float: left;
-      margin: 10px;
 
-    }
+ 
 
 
-    #map { 
-      float: right;
-      width: 200px;
-      height: 200px; 
-       margin: 10px;
+ //************ page OFFRES ************
 
-    }
+#accueil-offres h1 {
+  font-size: 20px; 
+}
+
+
+.rect-blanc {
+    background-color: white;
+    margin: auto;
+    width: 170px;
+    height: 50px;
+    padding: 5px;
+  }
+
+ 
+ 
+//************** choix voyage ***********//
+
+ /* barre de recherche */
+
+#choixVoyage {
+    display: flex;
+	  margin: 20px auto;
+  	justify-content: center;
+ }
+
+
+ .btnVoyage {
+  
+	  border-radius: 5px;
+	  font-size: 8px;
+	  padding: 2px;
+	  margin: 5px 5px;
+}
+
+ 
+
+
+
+ //************ page RESERVATION ************
+
+
+#banniere-page-reservation{
+    margin-top: 120px;   
+    padding: 60px 0 60px 0;
+ }
+ 
+
+ #rectangle-demande-reservation {
+     width: 200px;
+     height: 20px;
+  }
+
+  
+  #rectangle-demande-reservation h1 {
+  font-size: 18px;   
+}
+ 
+ 
+
+#demande-formulaire h2 {
+  font-size: 15px;
+  text-align: center;
+  margin: 15px;
+  margin-top: -40px;
+
+}
+
+#form {
+  background-color: #e8e8e8;
+  width: 230px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+
+#demande-formulaire .form-style-1 {
+display: block;
+ width: 100%;
+
+}
+
+
+#demande-formulaire .form-style-1 .field-divided {
+  // width: 160px;
+  width: 100%;
+}
+
+#demande-formulaire .form-style-1 .field-long{
+ width: 150px;
+  margin: 5px 0 0 0;
+
+}
+
+ 
+ 
 
 
 

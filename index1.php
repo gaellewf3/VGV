@@ -3,34 +3,24 @@
 <?php require_once "inc/header.inc.php"; ?>
 
 
-<section id="accueil"> 
-            
-            <div id="cap">
-                <h1>Cap sur les Maldives ! </h1>
-                <p>Offre spéciale <br> <strong>-20% </strong> </p>
-
-                <div class="bouton">
-                    <p>
-                    <a href="#">En savoir +</a>
-                    </p>
+<section id="banniere-page-index"> 
+        
+    <div class="ligne-banniere-page-index">
+ 
+                <div class="carte-cap">
+                    <h1>Cap sur les Maldives !</h1>
+                    <p>Offre spéciale <br> <strong> -20% </strong></p>
+                    <a class="button-cap" href="offres.php">En savoir +</a>
+                </div>    
+                        
+              
+                <div class="carte-offre">
+                     <h2>Offres last minute </h2>
+                     <a class="button-offre" href="offres.php">Découvrir les offres</a>       
                 </div>
-            </div>
-
-
-            <div id="offre">
-                <h2>Offres last minute </h2>
-                <div class="bouton2">
-                    <p>
-                    <a href="offres.php">Découvrir les offres</a>
-                    </p>
-                </div>
-            </div>
  </section>
+ 
 
-
-
-
- <!-- <section id="dernieres_offres"> -->
 
  <section id="dernieres_offres">
 
@@ -53,8 +43,7 @@
         
                                     </div>
                                 </div>
-                            </div>
-
+ 
 <div class="carte">
 
 <div class="image-carte"> </div>
@@ -70,8 +59,7 @@
 
                        </div>
                    </div>
-               </div>
-  
+   
                <div class="carte">
 
 <div class="image-carte"> </div>
@@ -90,7 +78,6 @@
                    </div>
                </div>
 
-
     <div class="carte">
 
              <div class="image-carte"> </div>
@@ -108,13 +95,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="clear"></div>
 
-
-         
-                <div class="bouton_voir_tous_page_index1">
-                    <a href="offres.php">Voir tous nos voyages</a>
-                </div>
-           
+                     <a href="offres.php" class="bouton_voir_tout">Voir tous nos voyages</a>
+            
 
                         
 
@@ -198,37 +182,36 @@
 
 <section id="qui">
 
-        <h3>Qui sommes-nous ?</h3>
+    <h3>Qui sommes-nous ?</h3>
 
-        <div class="ligne"> 
+    <div class="ligne"> 
 
             <div id="bloc-gauche">
 
                     <div id="image-agence">
-
-                    <img src="../VGV/img/portrait.png">
+                    <img src="../VGV/img/portrait.png" alt="portrait Maurice Di Domenico">
                     </div>
-                        </div>
+            </div>
 
 
-                <div id="bloc-droit"> 
-                             <div id="bloc-bio">
-                         <p>
-                            Passionné de <strong>voyages </strong>et découvertes,  
-                            Maurice Di Domenico tenait à faire de sa  
-                            passion,  son métier.   <br>
-                            Fort de 25 ans d’expérience dans les  
-                            voyages et le <strong>tourisme</strong>,  et après un long  
-                            séjour en Suisse où il a dirigé plusieurs  
-                            agences entre Genève et Lausanne, il est  
-                            revenu à <strong>Tremblay en France</strong>, pour fonder  
-                            <strong> « VERT-GALANT VOYAGES » </strong>dans le quartier 
-                            qui l'a vu naître.
-                        </p>
-                </div>
-
+         <div id="bloc-droit"> 
+             <div id="bloc-bio">
+                 <p>
+                    Passionné de <strong>voyages </strong>et découvertes,  
+                    Maurice Di Domenico tenait à faire de sa  
+                    passion,  son métier.   <br>
+                    Fort de 25 ans d’expérience dans les  
+                    voyages et le <strong>tourisme</strong>,  et après un long  
+                    séjour en Suisse où il a dirigé plusieurs  
+                    agences entre Genève et Lausanne, il est  
+                    revenu à <strong>Tremblay en France</strong>, pour fonder  
+                    <strong> « VERT-GALANT VOYAGES » </strong>dans le quartier 
+                    qui l'a vu naître.
+                </p>
             </div>
         </div>
+            
+    </div>
 
 </section>
 
@@ -271,33 +254,27 @@
   
     <div id="bloc-form"> 
 
-        <form>
+        <form id="formulaire">
             <div class="form-style-1">
-                    <input type="text" name="nom" class="field-divided" placeholder="Nom" /> 
-                    <input type="text" name="prenom" class="field-divided" placeholder="Prenom" />
+                    <input type="text" name="nom" class="field-divided" placeholder="Nom"  required /> 
+                    <input type="text" name="prenom" class="field-divided" placeholder="Prenom" required/>
                     
-                    <input type="email" name="email" class="field-divided" placeholder="Email"/>
-                    <input type="tel" name="tel" class="field-divided" placeholder="Telephone"/>
+                    <input type="email" name="email" class="field-divided" placeholder="Email"  required/>
+                    <input type="tel" name="tel" class="field-divided" placeholder="Telephone" required/>
    
-                   <textarea name="message" id="message" class="field-long field-textarea" placeholder="Votre message"></textarea>
+                   <textarea name="message" id="message" class="field-long field-textarea" placeholder="Votre message" required ></textarea>
                  
-                    <input type="checkbox" name="field5"> J’accepte d’être recontacté.e par Vert-Galant Voyages et ses partenaires. 
+                    <input type="checkbox" id="field5" name="field5"> J’accepte d’être recontacté.e par Vert-Galant Voyages et ses partenaires. 
         
-                    <input type="submit" value="envoyer" />
+                    <input id="envoyerForm" type="submit" value="envoyer" disabled/>
+            </div>  
 
-         </form>       
-    </div>
-    </div>
+         </form>     
+</div>
                 
-                
-           
-
 </section>
 
- 
- 
- 
-    <?php require_once "inc/footer.inc.php";?>
+     <?php require_once "inc/footer.inc.php";?>
 
     <script type="text/javascript" src="script.js"></script>
 
