@@ -179,7 +179,7 @@
 
 
 
-    <script type="text/javascript" src="offre-filtre.js"></script>
+    <script type="text/javascript" src="script/offre-filtre.js"></script>
 
 </body>
 

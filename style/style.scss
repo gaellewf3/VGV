@@ -16,7 +16,7 @@ body {
 
 header {
 	  width: 100%;
-    height: 120px;
+    // height: 120px;
     background-color:white;
     position: fixed;
     z-index: 1;
@@ -36,7 +36,8 @@ header nav a {
     color: black;
 	  text-decoration: none;
     font-weight: bold;
-    padding: 50px 100px;
+    // padding: 50px 100px;
+    padding: 50px 5%;
     font-size: 24px;
 }
 
@@ -58,13 +59,16 @@ header img {
 }
  
 
+#logo{
+  display: none;
 
+}
 
 // ********************** PAGE INDEX *********************// 
 
 
 #banniere-page-index {
-    background: url(../VGV/img/plage_accueil.jpg) no-repeat center center; 
+    background: url(../img/plage_accueil.jpg) no-repeat center center; 
     background-repeat:no-repeat;
     background-size: cover;
     padding: 120px;
@@ -103,14 +107,18 @@ header img {
   text-decoration: none;
   color: white;
   background-color: #00E300;
+  padding: 10px;
 }
  
+.button-cap:hover {
+  color: black;
+}
 
 .carte-offre {
-  background: url(../VGV/img/ski2.png) no-repeat center; 
+  background: url(../img/ski2.png) no-repeat center; 
   background-size: cover;
   border: 4px solid white; 
-  width: 20%;
+  width: 30%;
   margin: 50px 10px 10px 300px;
   
 }
@@ -132,9 +140,13 @@ header img {
   width: 80%;
   display: inline-block;
   margin: 250px 0px 0px 0px;
+  padding: 10px;
+
 }
 
- 
+.button-offre:hover{
+  color: black; 
+}
 
 
  
@@ -165,12 +177,12 @@ header img {
     float: left;
     border: grey solid 1px;
     background-color: white;
-    margin: 2.4%;
+    margin: 2%;
  } 
  
  // page index
 .image-carte {
-    background: url(../VGV/img/tunisia.jpg) no-repeat; 
+    background: url(../img/tunisia.jpg) no-repeat; 
     background-size: cover;
     background-position: center;
     height: 240px;
@@ -204,6 +216,8 @@ h4 {
   margin: 4px 2px;
   text-decoration: none;
   color: #ffffff;
+  padding: 10px;
+
  }
 
   // page index
@@ -233,7 +247,11 @@ h4 {
   display: block;
 }
 
- 
+.bouton_voir:hover{
+  color: black; 
+  cursor:pointer;
+}
+
 .bouton_voir_tout {
   background-color: #00E300;
   text-align: center;  
@@ -247,18 +265,21 @@ h4 {
   font-size: 28px;
   text-align: center;
   font-weight: normal;
+  padding: 8px;
 }
 
- 
+.bouton_voir_tout:hover{
+  color: black; 
+}
 
 //****** SECTION Pourquoi nous choisir PAGE INDEX1 *******//
 
 #choisir {
-  background: url(../VGV/img/feuille.png); 
+  background: url(../img/feuille.png); 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 550px;
+  // height: 550px;
 }
 
 
@@ -303,11 +324,11 @@ h4 {
  //.... section Newsletter page INDEX1////////////////
 
   #newsletter{ 
-    background: url(../VGV/img/moussa2.jpg); 
+    background: url(../img/moussa2.jpg); 
     background-size: cover;
     background-attachment: fixed; 
     // height: 480px; 
-
+    padding-bottom: 30px;
     } 
 
  
@@ -344,28 +365,30 @@ h4 {
     
     #blocMail {
       display: flex;
-      background-color: white;
+      // background-color: white;
     }
 
-    
+
     #validate {
         color: #ffffff;
         background-color: #00E300;
-        padding: 10px 40px;
+        // padding: 10px 30px;
         align-items: center;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 20px;
+        border: none;
+        padding: 10px;
       }
   
 
 //**** section Qui sommes-nous page INDEX1//
 
       #qui {
-        background: url(../VGV/img/feuille.png); 
+        background: url(../img/feuille.png); 
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 650px;
+       // height: 650px;
       }
 
 
@@ -383,28 +406,28 @@ h4 {
           display: flex;
         }
 
-        .ligne div  {
-          width: 50%;
-        }
+        // .ligne div  {
+        //   width: 50%;
+        // }
       
 
         #bloc-gauche {
-          width: 50%;
-        }
+          width: 40%;
+            padding: 0px 50px 50px 200px;  
+         }
 
         #image-agence img{
-          width: 90%;
-         padding: 50px 50px 0px 300px;
-  
+            width: 100%; 
         }
 
         #bloc-droit {
-          width: 50%;
-        }
+          width: 60%;
+            padding: 0px 100px 0px 0px;
+         }
 
         #bloc-bio p {
           text-align: justify;
-          padding: 70px 0 10px 0 ;
+          padding: 20px 0px 10px 0px ;
           line-height: 25px; 
 
         }
@@ -461,10 +484,13 @@ h4 {
         // float: left;
         // apres le float, on met clear both
         margin: 10px;
-
-
       }
 
+      .fab:hover{
+      color: #3b5998;
+      cursor:pointer;
+
+      }
 
       #map { 
         // float: right;
@@ -522,7 +548,7 @@ select{
 	border: 1px solid #00e300;
 }
 .form-style-1 .field-divided{
-	width: 49%;
+	width: 47%;
     margin: 15px 0 0 0;
 
 }
@@ -540,16 +566,17 @@ select{
     
 }
 .form-style-1 input[type=submit], .form-style-1 input[type=button]{
-	background: #00e300;
+	 background: #00e300;
 	padding: 8px 15px 8px 15px;
 	border: none;
   text-transform: uppercase;
 	color: #fff;
-    margin: 10px 0 0 0;
-
+    // margin: 10px 0 0 0;
+ margin: 1%;
 }
+
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
-	background: #00e300;
+	  // background: #00e300;
 	box-shadow:none;
 	-moz-box-shadow:none;
 	-webkit-box-shadow:none;
@@ -562,6 +589,7 @@ input[type=checkbox] {
 
 input[type=submit]:hover {
   cursor: pointer;
+  
 }
 
 input[type=submit]:disabled {
@@ -569,12 +597,13 @@ input[type=submit]:disabled {
   background: black;
 }
 
+
 /******************** PAGE OFFRES *****************/
  
 
 #accueil-offres {
      
-    background: url(../VGV/img/background-page-offres.png) ; 
+    background: url(../img/background-page-offres.png) ; 
     background-repeat:no-repeat;
     background-size: cover;
     padding-top: 190px;
@@ -633,6 +662,8 @@ input[type=submit]:disabled {
 	background-color: #00E300;
 	border: 1px solid #00E300;
 	transition: 0.5s;
+  cursor:pointer;
+
 }
 
 .btnSelected{
@@ -664,7 +695,7 @@ input[type=submit]:disabled {
 // ********************** PAGE RESERVATION *********************// 
 
 #banniere-page-reservation{
-    background-image: url(../VGV/img/map22.jpg) ; 
+    background-image: url(../img/map22.jpg) ; 
     background-repeat:no-repeat;
     background-size: cover;
     margin-top: 120px;   
@@ -688,9 +719,7 @@ input[type=submit]:disabled {
    font-weight : normal; 
 }
  
-#demande-formulaire {
-  height: 700px;
-}
+
 
 #demande-formulaire h2 {
   font-size: 30px;
@@ -717,7 +746,7 @@ input[type=submit]:disabled {
  footer{
    bottom: 0;
    width: 100%;
-   height: 240px;
+  //  height: 240px;
    background-color: #00e300;
   
  }
@@ -729,12 +758,11 @@ input[type=submit]:disabled {
  .ligne2 {
 	width: 100%;
 	display: flex;
-  
+  padding: 20px;
 }
 
 .ligne2 div  {
- 	width: 50%;
-   
+ 	width: 50%;  
 }
 
 .copyright {
@@ -751,6 +779,8 @@ input[type=submit]:disabled {
 
 .copyright a:hover {
   color: black;
+  cursor:pointer;
+
 }
 
 .logo {
@@ -766,52 +796,36 @@ input[type=submit]:disabled {
 }
 
 
-// #hamburger {
-//   width: 10px;
-//   display: none;
 
-// }
-
-// #menuResponsive{
-//   display: none;
-//   position: absolute;
-//   background-color: white;
-//   margin: auto;
-//   width: 100%;
-//   padding: 5px; 
-  
-// }
-
-// #menuResponsive a {
-//   text-decoration: none;
-//   color: gray;
-//  display:block;
-//  padding: 20px;
-//  font-size: 25px;
-
-// }
-
- 
+ //----------------------RESPONSIVE-------------------------// 
+ //----------------------RESPONSIVE-------------------------// 
+ //----------------------RESPONSIVE-------------------------// 
  
 
-//////////////////// RESPONSIVE //////////////////
-
+ 
 @media  screen and (max-width: 1000px){
   
+  /** menu burger **/
+
   .bordureMenuBurger{
     width: 100%;
    }
 
-  .mobile{
-    display: block;
-    width: 10%;
-    margin: auto;
-    
-  }
 
   #burger {
     display: block;
+    margin: 0px auto;
+     width: 20px;
+    height: 20px;
+    padding: 10px;
+  
 }
+
+#logo {
+  display: block;
+  margin: auto;
+}
+
  #menu {
    display: none;
    position: absolute;
@@ -822,54 +836,30 @@ input[type=submit]:disabled {
  }
  
 #menu a {
-  text-decoration: none;
-     color: gray;
-   display:block;
-   padding: 20px;
-  font-size: 25px;
+    text-decoration: none;
+    color: gray;
+    display:block;
+    padding: 20px;
+    font-size: 25px;
  }
+
+
  #menu img {
    display: none;
  }
-}
 
 
+ /** banniere page index1 **/
 
-// page index
+ .ligne-banniere-page-index {
+   display: block;
+  margin: 50px auto;
+ }
 
-@media screen and (max-width: 350px) {
- 
-	section {
-     padding: 50px 0;
-
- 	}
-//header 
-
-//efface #hamburger
-	// #hamburger {
-	// 	display: block;   
-  //   width: 40px;
-  //   height: 40px;     
-	// }
-
-  // #navResponsive{
-  //   background-color: #fff;
-  // }
-
-	//  nav a {
-	// 	display: none;
-	// }
- 
-
- /***** encadré CAP sur les MALDIVES responsive *****/
-
-#accueil #cap { 
-  background-color: rgba(0, 0, 0, 0.2);
+.carte-cap { 
   width: 90%;
-  float: none;
-  // height: 125px;
-  // mettre des height cest fixe, on evite
   margin: auto;
+
 }
 
 #accueil h1 {
@@ -880,21 +870,521 @@ input[type=submit]:disabled {
   font-size: 17px;
   }
 
-.bouton  {
-margin-left: -15px;
+.button-cap  {
+ font-size: 30px;
 }
 
+.carte-offre { 
+  
+  width: 90%;
+  margin: 30px auto;
 
-.bouton a {
+} 
+
+.carte-offre h2 {
+  font-size: 36px;
+}
+
+.button-offre {
+  font-size: 30px;
+}
+
+/**section qui page index1 **/ 
+
+.ligne {
+  display: block;
+}
+
+#bloc-gauche{
+  padding: 0px;
+  display: block;
+  width: 40%;
+  // margin: 0px 100px 0px 100px;
+margin: auto;
+}
+
+#image-agence img{
+  width: 100%;
+  margin: auto;
+
+}
+ 
+#bloc-droit {
+  padding: 0px;
+  display: block;
+  width: 80%;
+  margin: auto;
+
+}
+ 
+
+#bloc-bio p {
+    text-align: justify;
+    // margin: auto;
+    line-height: 35px;
+    font-size: 20px;
+    // padding: 0px;
+}  
+
+
+
+/**section contact  page index1 **/
+
+#infos-pratique {
+  display: block;
+  margin: auto;
+ flex-wrap: wrap;
+ } 
+
+.content-info {
+width: 100%;
+}
+
+.content-info p{
+line-height: 30px;
 font-size: 20px;
+text-align: center;
 }
 
- //*** encadré offres LAST MIN responsive**
+
+#facebook-et-map{
+width: 100%;
+display: block;
+flex-wrap: wrap;
+margin: auto;
+text-align: center;
+}
+
+.fab {
+// padding: 50px 0px 50px 200px;
+display:block;
+text-align: center;
+ }
+
+#map {
+z-index: 0;
+}
+
+
+#bloc-form {
+display: block;
+width: 100%;
+}
+
+#bloc-form {
+width: 100%;
+display: block;
+}
+
+.form-style-1 .field-divided {
+width: 100%;
+}
+
+
+#envoyerForm {
+display: block; 
+font-size: 20px;
+
+}
+
+
+/** choixVoyage page offres **/ 
+
+#accueil-offres h1 {
+  font-size: 28px; 
+}
+
+
+.rect-blanc {
+    background-color: white;
+    margin: auto;
+    width: 40%;
+  }
+
+  
+
+#choixVoyage {
+    display: flex;
+	  margin: 20px auto;
+  	justify-content: center;
+ }
+
+
+ .btnVoyage {
+	  font-size: 20px;
+	  padding: 6px;
+	  margin: 5px 5px;
+}
+
+.ligne2{
+  padding: 0px;
+}
+ 
+
+
+}
+
+
+//---------------------------------------------------------------------------------------------------------
+
+@media  screen and (max-width: 500px){
+  
+
+
+  /** menu burger**/
+
+  .bordureMenuBurger{
+    width: 100%;
+   }
+
+   #burger {
+    width: 20px;
+    padding: 10px;
+    
+
+}
+
+#logo {
+  display: block;
+  width: 70px;
+  height: 50px;
+  margin: auto;
+}
+
+
+/** banniere page index1 **/ 
+
+.ligne-banniere-page-index {
+  display: block;
+  padding: 30px 0px 30px 0px;
+}
+
+.carte-cap { 
+  width: 100%;
+  margin: auto;
+}
+
+ 
+
+/** carte voyage **/
+
+   .carte { 
+    width: 90%;
+      margin: 3.4%;
+   } 
+   
+  .image-carte {
+      height: 140px;
+  }
+
+
+  /** section pourquoi nous choisir **/ 
+
+  .icons {
+    display: block;
+     margin: 20px auto;
+     margin: auto;
+  } 
+
+  .content-icon {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+   .content-icon p{
+    font-size: 24px;
+    text-align: center;
+  }
+
+    .content-icon img {
+     margin: auto;
+  }
+
+/** section newsletter 500 **/ 
+
+  #barre {
+    padding: 0px 0px 0px 0px;
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+
+
+  #blocMail {
+    margin: auto;
+    justify-content: center;
+   }
+
+  #email {
+    font-size: 30px;
+    width: 70%;
+  }
+
+
+  #validate {   
+    margin: auto;
+    font-size: 25px;
+    }
+
+/** section qui sommes nous **/ 
+
+
+    .ligne {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+
+    .ligne div  {
+      width: 100%;
+      display: block;
+    }
+
+    #bloc-gauche img{
+      width: 90%;
+      margin: 20px;
+     }
+
+    #bloc-gauche {
+      width: 100%;
+      padding: 0px 0px 0px 0px;
+      margin: auto;
+    }
+
+    #bloc-droit {
+      display: block;
+      padding: 20px;
+      // margin: 0px 100px 0px  0px;
+      width: 100%;
+    }   
+
+    #bloc-bio p {
+      // padding: 0px 0px 0px 100px;
+      font-size: 16px;
+      line-height: 20px;  
+      text-align: center;    
+    }
+
+/** section contactez-nous **/ 
+   
+    #infos-pratique {
+       display: block;
+       margin: auto;
+      flex-wrap: wrap;
+  } 
+
+   .content-info {
+   width: 100%;
+  }
+
+  .content-info p{
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+    
+#facebook-et-map{
+  text-align: center;
+  width: 100%;
+  display: block;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.fab {
+//  padding: 50px 0px 50px 70px;
+display:block;
+// text-align: center;
+}
+
+#map {
+  z-index: 0;
+}
+ 
+
+#bloc-form {
+  display: block;
+  width: 100%;
+}
+
+#bloc-form {
+ width: 100%;
+ display: block;
+}
+ 
+.form-style-1 .field-divided {
+  width: 100%;
+}
+
+ 
+#envoyerForm {
+display: block; 
+font-size: 20px;
+
+}
+
+/**  footer **/
+
+footer{
+  display: block;
+} 
+
+footer h5 {
+ font-size: 15px;
+}
+
+.copyright {
+  font-size: 15px;
+}
+ 
+.ligne2 {
+width: 100%;
+display: block;
+
+}
+
+.ligne2 div  {
+ width: 100%;
+ 
+}
+
+/** choixVoyage page offres **/ 
+
+#accueil-offres h1 {
+  font-size: 36px; 
+}
+
+
+.rect-blanc {
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    padding: 3px;
+  }
+
+  
+
+#choixVoyage {
+  display: block;
+	  margin: 20px auto;
+  	justify-content: center;
+    padding: 40px;
+ }
+
+
+ .btnVoyage {
+   display: block;
+	  font-size: 23px;
+	  padding: 16px;
+	  margin: 5px 5px;
+    text-align: center;
+}
+
+ /**   page reservations **/ 
+
+
+#form {
+ width: 100%;
+margin: auto;
+flex-wrap: wrap;
+}
+
+
+#demande-formulaire .form-style-1 {
+display: block;
+width: 90%;
+
+}
+
+
+#demande-formulaire .form-style-1 .field-divided {
+width: 100%;
+}
+
+#demande-formulaire .form-style-1 .field-long{
+width: 100%;
+margin: 5px 0 0 0;
+
+}
+
+}
+
+// ********************************************************************
+
+// page index
+
+@media screen and (max-width: 320px) {
+ 
+  .bordureMenuBurger{
+    width: 100%;
+   }
+
+   #burger {
+     width: 20px;
+     padding: 10px;
+    
+
+}
+
+#logo {
+  display: block;
+  width: 70px;
+  height: 50px;
+  margin: auto;
+}
+
+
+/** banniere page index1 320 **/ 
+#banniere-page-index {
+  padding: 1px; 
+
+}
+
+.ligne-banniere-page-index {
+  display: block;
+  width: 100%;
+
+ 
+}
+
+.carte-cap { 
+  width: 90%;
+  padding-top: 34px; 
+}
+
+.carte-cap h1 {
+  font-size: 25px;
+}
+
+.carte-cap p {
+  font-size: 30px;
+
+}
+
+.button-cap {
+  width: 10px;
+} 
+
+.carte-offre h2 {
+  font-size: 30px;
+
+}
+.button-offre{
+  width: 80%
+}
+
+.carte-offre a {
+  font-size: 28px;
+
+}
+
+ //*** encadré offres LAST MIN responsive  320**
 
  #accueil #offre { 
   background-size: 130px;
-  border: 4px solid white; 
-  // width en pourcentage car fluide
   width: 90%;
   margin: auto;
 } 
@@ -904,7 +1394,6 @@ font-size: 20px;
 }
 
 .bouton2 {
-  // margin-left: -13px;
   margin-top: 130px;
 }
 
@@ -915,22 +1404,19 @@ font-size: 20px;
 
 .bouton_voir_tout {
   width: 150px;
-  // height: 40px;
   padding: 5px;
   font-size: 14px;
 }
 
 
 
-//***section découvrez les dernieres offres
+//***section découvrez les dernieres offres 320
 
-#dernieres_offres {
-height: 1300px;
-}
+ 
 
 #dernieres_offres h3 {
   font-size: 25px;
-  margin-top: -40px;
+  // margin-top: -40px;
  }
 
 
@@ -943,7 +1429,7 @@ height: 1300px;
     margin: 3.4%;
  } 
  
- // page index
+ // page index 
 .image-carte {
     height: 140px;
   
@@ -951,42 +1437,31 @@ height: 1300px;
  
 
 
-//*** Section pourquoi nous choisir ***********
+//*** Section pourquoi nous choisir 320 ***********
 
 
 
  #choisir h3 {
-	font-size: 25px;
-  margin-top: -40px;
-	// margin: 30px 0 0 0;
+	font-size: 30px;
+  
 }
  
-.icons {
-	// display: flex;
-  padding: 30px;
-  margin: auto;
+  .icons {
+   width: 100%;
+    margin: auto;
 
 } 
 
  .content-icon p{
-  font-size: 14px;
-  // line-height: 9px;
+  font-size: 24px;
   text-align: center;
   }
 
-  // responsive
-  .content-icon img {
-   margin: auto;
-  //  display: flex;
-   height: 50px;
-  }
 
-  //******* Newsletter resp ******
+  //******* Newsletter resp 320 ******
 
   #newsletter {
-    // height: 200px;
     background-attachment: cover;
-    // background-size: 100% 100%;
   }
 
 
@@ -999,31 +1474,33 @@ height: 1300px;
       font-size: 20px;
   }
     
-    #barre {
-      display: flex;
-      justify-content: center;
-      font-size: 14px;
-      padding: 20px 0 30px 0;
+
+
+  #blocMail {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+
+    #email {
+      display: block;
+      margin: auto;
     }
 
-    // passer la barre en dessous
-    #validate {      
-        padding: 5px 10px;
+    #validate {   
+        display: block;
         font-size: 10px;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
       }
 
+     
+//****** Qui sommes-nous 320
 
-////////////  Qui sommes-nous
-
-// A REVOIR !!!!
-
-    #qui {
-      height: 700px;
-    }
 
     #qui h3{ 
-      font-size: 25px;
-      margin-top: -40px;
+      font-size: 30px;
     }
 
     .ligne {
@@ -1040,40 +1517,58 @@ height: 1300px;
 
 
     #bloc-gauche img{
-      width: 250px;
-      height: 200px;
-      margin: 0px 40px;
-     
+      width: 90%;
+      margin: auto;
+      display: block;
      }
 
-    #bloc-gauche {
-      padding: 0px 0px 0px 0px;
-      margin: auto;
-    }
 
-    //resp
     #bloc-droit {
       display: block;
-      padding: 20px;
-    }   
+      margin: 0px;
+      padding:0px;
+     }   
 
     #bloc-bio p {
-      font-size: 20px;
-      line-height: 23px;  
+      font-size: 16px;
+      line-height: 15px;  
       text-align: center;    
+      padding: 20px 20px 20px 20px;
     }
 
 
+    #infos-pratique{
+      padding: 0px;
+    }
 
+
+    // ********** footer  320
+
+    footer{
+      display: block;
+   }
+  
+   footer h5 {
+     font-size: 20px;
+   }
    
-    //**** Contactez-nous Resp ***
-    #contact {
-      // height: 1400px;
-    }
+   .ligne2 {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    // on garde les padding mais on ajoute boxsizin border box
+  }
+  
+  .ligne2 div  {
+     width: 100%;
+     
+  }
+    
+    //**** Contactez-nous Resp 320 ***
+ 
 
     #contact h3{ 
-      font-size: 25px;
-      margin-top: -40px;
+      font-size: 35px;
     }
 
    
@@ -1089,31 +1584,26 @@ height: 1300px;
   }
 
   .content-info p{
-    max-width: 300px;
+    width: 100%;
     line-height: 20px;
     font-size: 20px;
     text-align: center;
   }
 
-// #bloc-form {
-//   width: 100%;
-// }
     
 #facebook-et-map{
-  width: 300px;
-  display: flex;
+  width: 100%;
+  display: block;
   flex-wrap: wrap;
   margin: auto;
 }
 
 .fab {
-// padding: 0px 20px 0px 30px;
 display:block;
 text-align: center;
 }
 
 #map {
-
   z-index: 0;
 }
  
@@ -1123,9 +1613,8 @@ text-align: center;
 }
 
 .form-style-1{
-display: block;
+  display: block;
   width: 80%;
-	// margin: 10px 10px 10px 10px;
 }
  
 .field-textarea{
@@ -1135,10 +1624,9 @@ display: block;
 
 
 
- 
 
 
- //************ page OFFRES ************
+ //************ page OFFRES 320 ************
 
 #accueil-offres h1 {
   font-size: 20px; 
@@ -1155,9 +1643,9 @@ display: block;
 
  
  
-//************** choix voyage ***********//
+//************** choix voyage 320 ***********//
 
- /* barre de recherche */
+ /* barre de recherche  320 */
 
 #choixVoyage {
     display: flex;
@@ -1178,7 +1666,7 @@ display: block;
 
 
 
- //************ page RESERVATION ************
+ //************ page RESERVATION  320 ************
 
 
 #banniere-page-reservation{
@@ -1203,7 +1691,7 @@ display: block;
   font-size: 15px;
   text-align: center;
   margin: 15px;
-  margin-top: -40px;
+  // margin-top: -40px;
 
 }
 
@@ -1217,49 +1705,23 @@ display: block;
 
 #demande-formulaire .form-style-1 {
 display: block;
- width: 100%;
+ width: 80%;
 
 }
 
 
 #demande-formulaire .form-style-1 .field-divided {
-  // width: 160px;
-  width: 100%;
+   width: 100%;
 }
 
 #demande-formulaire .form-style-1 .field-long{
- width: 150px;
+ width: 180px;
   margin: 5px 0 0 0;
 
 }
 
  
  
-
-
-
-///footer 
-
-  footer{
-    display: block;
- }
-
- footer h5 {
-   font-size: 15px;
- }
- 
- .ligne2 {
-	width: 100%;
-  display: block;
-  
-}
-
-.ligne2 div  {
- 	width: 100%;
-   
-}
- 
-
  
   }
 

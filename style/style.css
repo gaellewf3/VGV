@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -11,7 +10,6 @@ body {
 
 header {
   width: 100%;
-  height: 120px;
   background-color: white;
   position: fixed;
   z-index: 1;
@@ -29,7 +27,7 @@ header nav a {
   color: black;
   text-decoration: none;
   font-weight: bold;
-  padding: 50px 100px;
+  padding: 50px 5%;
   font-size: 24px; }
 
 nav a:hover {
@@ -43,8 +41,11 @@ header img {
 #burger {
   display: none; }
 
+#logo {
+  display: none; }
+
 #banniere-page-index {
-  background: url(../VGV/img/plage_accueil.jpg) no-repeat center center;
+  background: url(../img/plage_accueil.jpg) no-repeat center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 120px; }
@@ -75,13 +76,17 @@ header img {
   font-size: 24px;
   text-decoration: none;
   color: white;
-  background-color: #00E300; }
+  background-color: #00E300;
+  padding: 10px; }
+
+.button-cap:hover {
+  color: black; }
 
 .carte-offre {
-  background: url(../VGV/img/ski2.png) no-repeat center;
+  background: url(../img/ski2.png) no-repeat center;
   background-size: cover;
   border: 4px solid white;
-  width: 20%;
+  width: 30%;
   margin: 50px 10px 10px 300px; }
 
 .carte-offre h2 {
@@ -99,7 +104,11 @@ header img {
   display: block;
   width: 80%;
   display: inline-block;
-  margin: 250px 0px 0px 0px; }
+  margin: 250px 0px 0px 0px;
+  padding: 10px; }
+
+.button-offre:hover {
+  color: black; }
 
 #dernieres_offres {
   width: 100%;
@@ -118,10 +127,10 @@ header img {
   float: left;
   border: grey solid 1px;
   background-color: white;
-  margin: 2.4%; }
+  margin: 2%; }
 
 .image-carte {
-  background: url(../VGV/img/tunisia.jpg) no-repeat;
+  background: url(../img/tunisia.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 240px; }
@@ -146,7 +155,8 @@ h4 {
   display: inline-block;
   margin: 4px 2px;
   text-decoration: none;
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 10px; }
 
 .prix {
   font-weight: bold;
@@ -164,6 +174,10 @@ h4 {
   color: white;
   display: block; }
 
+.bouton_voir:hover {
+  color: black;
+  cursor: pointer; }
+
 .bouton_voir_tout {
   background-color: #00E300;
   text-align: center;
@@ -174,14 +188,17 @@ h4 {
   color: white;
   font-size: 28px;
   text-align: center;
-  font-weight: normal; }
+  font-weight: normal;
+  padding: 8px; }
+
+.bouton_voir_tout:hover {
+  color: black; }
 
 #choisir {
-  background: url(../VGV/img/feuille.png);
+  background: url(../img/feuille.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 550px; }
+  background-size: cover; }
 
 #choisir h3 {
   text-align: center;
@@ -212,9 +229,10 @@ h4 {
   height: 120px; }
 
 #newsletter {
-  background: url(../VGV/img/moussa2.jpg);
+  background: url(../img/moussa2.jpg);
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  padding-bottom: 30px; }
 
 #newsletter h3 {
   text-align: center;
@@ -243,23 +261,22 @@ h4 {
   padding: 10px; }
 
 #blocMail {
-  display: flex;
-  background-color: white; }
+  display: flex; }
 
 #validate {
   color: #ffffff;
   background-color: #00E300;
-  padding: 10px 40px;
   align-items: center;
   text-decoration: none;
-  font-size: 30px; }
+  font-size: 20px;
+  border: none;
+  padding: 10px; }
 
 #qui {
-  background: url(../VGV/img/feuille.png);
+  background: url(../img/feuille.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 650px; }
+  background-size: cover; }
 
 #qui h3 {
   text-align: center;
@@ -273,22 +290,20 @@ h4 {
   width: 100%;
   display: flex; }
 
-.ligne div {
-  width: 50%; }
-
 #bloc-gauche {
-  width: 50%; }
+  width: 40%;
+  padding: 0px 50px 50px 200px; }
 
 #image-agence img {
-  width: 90%;
-  padding: 50px 50px 0px 300px; }
+  width: 100%; }
 
 #bloc-droit {
-  width: 50%; }
+  width: 60%;
+  padding: 0px 100px 0px 0px; }
 
 #bloc-bio p {
   text-align: justify;
-  padding: 70px 0 10px 0;
+  padding: 20px 0px 10px 0px;
   line-height: 25px; }
 
 #contact {
@@ -329,6 +344,10 @@ h4 {
   font-size: 70px;
   color: #00E300;
   margin: 10px; }
+
+.fab:hover {
+  color: #3b5998;
+  cursor: pointer; }
 
 #map {
   width: 100%;
@@ -379,7 +398,7 @@ select {
   border: 1px solid #00e300; }
 
 .form-style-1 .field-divided {
-  width: 49%;
+  width: 47%;
   margin: 15px 0 0 0; }
 
 .form-style-1 .field-long {
@@ -396,10 +415,9 @@ select {
   border: none;
   text-transform: uppercase;
   color: #fff;
-  margin: 10px 0 0 0; }
+  margin: 1%; }
 
 .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover {
-  background: #00e300;
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none; }
@@ -416,7 +434,7 @@ input[type=submit]:disabled {
 
 /******************** PAGE OFFRES *****************/
 #accueil-offres {
-  background: url(../VGV/img/background-page-offres.png);
+  background: url(../img/background-page-offres.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 190px; }
@@ -458,7 +476,8 @@ input[type=submit]:disabled {
   color: #ffffff;
   background-color: #00E300;
   border: 1px solid #00E300;
-  transition: 0.5s; }
+  transition: 0.5s;
+  cursor: pointer; }
 
 .btnSelected {
   color: #ffffff;
@@ -477,7 +496,7 @@ input[type=submit]:disabled {
   margin: 0 auto; }
 
 #banniere-page-reservation {
-  background-image: url(../VGV/img/map22.jpg);
+  background-image: url(../img/map22.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 120px;
@@ -494,9 +513,6 @@ input[type=submit]:disabled {
   color: #00E300;
   text-align: center;
   font-weight: normal; }
-
-#demande-formulaire {
-  height: 700px; }
 
 #demande-formulaire h2 {
   font-size: 30px;
@@ -516,7 +532,6 @@ input[type=submit]:disabled {
 footer {
   bottom: 0;
   width: 100%;
-  height: 240px;
   background-color: #00e300; }
 
 footer h5 {
@@ -524,7 +539,8 @@ footer h5 {
 
 .ligne2 {
   width: 100%;
-  display: flex; }
+  display: flex;
+  padding: 20px; }
 
 .ligne2 div {
   width: 50%; }
@@ -539,7 +555,8 @@ footer h5 {
   color: white; }
 
 .copyright a:hover {
-  color: black; }
+  color: black;
+  cursor: pointer; }
 
 .logo {
   color: white;
@@ -551,16 +568,20 @@ footer h5 {
   width: 7%; }
 
 @media screen and (max-width: 1000px) {
+  /** menu burger **/
   .bordureMenuBurger {
     width: 100%; }
 
-  .mobile {
-    display: block;
-    width: 10%;
-    margin: auto; }
-
   #burger {
-    display: block; }
+    display: block;
+    margin: 0px auto;
+    width: 20px;
+    height: 20px;
+    padding: 10px; }
+
+  #logo {
+    display: block;
+    margin: auto; }
 
   #menu {
     display: none;
@@ -578,16 +599,15 @@ footer h5 {
     font-size: 25px; }
 
   #menu img {
-    display: none; } }
-@media screen and (max-width: 350px) {
-  section {
-    padding: 50px 0; }
+    display: none; }
 
-  /***** encadré CAP sur les MALDIVES responsive *****/
-  #accueil #cap {
-    background-color: rgba(0, 0, 0, 0.2);
+  /** banniere page index1 **/
+  .ligne-banniere-page-index {
+    display: block;
+    margin: 50px auto; }
+
+  .carte-cap {
     width: 90%;
-    float: none;
     margin: auto; }
 
   #accueil h1 {
@@ -596,15 +616,350 @@ footer h5 {
   #accueil p {
     font-size: 17px; }
 
-  .bouton {
-    margin-left: -15px; }
+  .button-cap {
+    font-size: 30px; }
 
-  .bouton a {
+  .carte-offre {
+    width: 90%;
+    margin: 30px auto; }
+
+  .carte-offre h2 {
+    font-size: 36px; }
+
+  .button-offre {
+    font-size: 30px; }
+
+  /**section qui page index1 **/
+  .ligne {
+    display: block; }
+
+  #bloc-gauche {
+    padding: 0px;
+    display: block;
+    width: 40%;
+    margin: auto; }
+
+  #image-agence img {
+    width: 100%;
+    margin: auto; }
+
+  #bloc-droit {
+    padding: 0px;
+    display: block;
+    width: 80%;
+    margin: auto; }
+
+  #bloc-bio p {
+    text-align: justify;
+    line-height: 35px;
     font-size: 20px; }
+
+  /**section contact  page index1 **/
+  #infos-pratique {
+    display: block;
+    margin: auto;
+    flex-wrap: wrap; }
+
+  .content-info {
+    width: 100%; }
+
+  .content-info p {
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center; }
+
+  #facebook-et-map {
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center; }
+
+  .fab {
+    display: block;
+    text-align: center; }
+
+  #map {
+    z-index: 0; }
+
+  #bloc-form {
+    display: block;
+    width: 100%; }
+
+  #bloc-form {
+    width: 100%;
+    display: block; }
+
+  .form-style-1 .field-divided {
+    width: 100%; }
+
+  #envoyerForm {
+    display: block;
+    font-size: 20px; }
+
+  /** choixVoyage page offres **/
+  #accueil-offres h1 {
+    font-size: 28px; }
+
+  .rect-blanc {
+    background-color: white;
+    margin: auto;
+    width: 40%; }
+
+  #choixVoyage {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center; }
+
+  .btnVoyage {
+    font-size: 20px;
+    padding: 6px;
+    margin: 5px 5px; }
+
+  .ligne2 {
+    padding: 0px; } }
+@media screen and (max-width: 500px) {
+  /** menu burger**/
+  .bordureMenuBurger {
+    width: 100%; }
+
+  #burger {
+    width: 20px;
+    padding: 10px; }
+
+  #logo {
+    display: block;
+    width: 70px;
+    height: 50px;
+    margin: auto; }
+
+  /** banniere page index1 **/
+  .ligne-banniere-page-index {
+    display: block;
+    padding: 30px 0px 30px 0px; }
+
+  .carte-cap {
+    width: 100%;
+    margin: auto; }
+
+  /** carte voyage **/
+  .carte {
+    width: 90%;
+    margin: 3.4%; }
+
+  .image-carte {
+    height: 140px; }
+
+  /** section pourquoi nous choisir **/
+  .icons {
+    display: block;
+    margin: 20px auto;
+    margin: auto; }
+
+  .content-icon {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px; }
+
+  .content-icon p {
+    font-size: 24px;
+    text-align: center; }
+
+  .content-icon img {
+    margin: auto; }
+
+  /** section newsletter 500 **/
+  #barre {
+    padding: 0px 0px 0px 0px;
+    width: 90%;
+    display: block;
+    margin: auto; }
+
+  #blocMail {
+    margin: auto;
+    justify-content: center; }
+
+  #email {
+    font-size: 30px;
+    width: 70%; }
+
+  #validate {
+    margin: auto;
+    font-size: 25px; }
+
+  /** section qui sommes nous **/
+  .ligne {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+
+  .ligne div {
+    width: 100%;
+    display: block; }
+
+  #bloc-gauche img {
+    width: 90%;
+    margin: 20px; }
+
+  #bloc-gauche {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: auto; }
+
+  #bloc-droit {
+    display: block;
+    padding: 20px;
+    width: 100%; }
+
+  #bloc-bio p {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center; }
+
+  /** section contactez-nous **/
+  #infos-pratique {
+    display: block;
+    margin: auto;
+    flex-wrap: wrap; }
+
+  .content-info {
+    width: 100%; }
+
+  .content-info p {
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center; }
+
+  #facebook-et-map {
+    text-align: center;
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+    margin: auto; }
+
+  .fab {
+    display: block; }
+
+  #map {
+    z-index: 0; }
+
+  #bloc-form {
+    display: block;
+    width: 100%; }
+
+  #bloc-form {
+    width: 100%;
+    display: block; }
+
+  .form-style-1 .field-divided {
+    width: 100%; }
+
+  #envoyerForm {
+    display: block;
+    font-size: 20px; }
+
+  /**  footer **/
+  footer {
+    display: block; }
+
+  footer h5 {
+    font-size: 15px; }
+
+  .copyright {
+    font-size: 15px; }
+
+  .ligne2 {
+    width: 100%;
+    display: block; }
+
+  .ligne2 div {
+    width: 100%; }
+
+  /** choixVoyage page offres **/
+  #accueil-offres h1 {
+    font-size: 36px; }
+
+  .rect-blanc {
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    padding: 3px; }
+
+  #choixVoyage {
+    display: block;
+    margin: 20px auto;
+    justify-content: center;
+    padding: 40px; }
+
+  .btnVoyage {
+    display: block;
+    font-size: 23px;
+    padding: 16px;
+    margin: 5px 5px;
+    text-align: center; }
+
+  /**   page reservations **/
+  #form {
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap; }
+
+  #demande-formulaire .form-style-1 {
+    display: block;
+    width: 90%; }
+
+  #demande-formulaire .form-style-1 .field-divided {
+    width: 100%; }
+
+  #demande-formulaire .form-style-1 .field-long {
+    width: 100%;
+    margin: 5px 0 0 0; } }
+@media screen and (max-width: 320px) {
+  .bordureMenuBurger {
+    width: 100%; }
+
+  #burger {
+    width: 20px;
+    padding: 10px; }
+
+  #logo {
+    display: block;
+    width: 70px;
+    height: 50px;
+    margin: auto; }
+
+  /** banniere page index1 320 **/
+  #banniere-page-index {
+    padding: 1px; }
+
+  .ligne-banniere-page-index {
+    display: block;
+    width: 100%; }
+
+  .carte-cap {
+    width: 90%;
+    padding-top: 34px; }
+
+  .carte-cap h1 {
+    font-size: 25px; }
+
+  .carte-cap p {
+    font-size: 30px; }
+
+  .button-cap {
+    width: 10px; }
+
+  .carte-offre h2 {
+    font-size: 30px; }
+
+  .button-offre {
+    width: 80%; }
+
+  .carte-offre a {
+    font-size: 28px; }
 
   #accueil #offre {
     background-size: 130px;
-    border: 4px solid white;
     width: 90%;
     margin: auto; }
 
@@ -622,12 +977,8 @@ footer h5 {
     padding: 5px;
     font-size: 14px; }
 
-  #dernieres_offres {
-    height: 1300px; }
-
   #dernieres_offres h3 {
-    font-size: 25px;
-    margin-top: -40px; }
+    font-size: 25px; }
 
   .carte {
     width: 90%;
@@ -637,20 +988,15 @@ footer h5 {
     height: 140px; }
 
   #choisir h3 {
-    font-size: 25px;
-    margin-top: -40px; }
+    font-size: 30px; }
 
   .icons {
-    padding: 30px;
+    width: 100%;
     margin: auto; }
 
   .content-icon p {
-    font-size: 14px;
+    font-size: 24px;
     text-align: center; }
-
-  .content-icon img {
-    margin: auto;
-    height: 50px; }
 
   #newsletter {
     background-attachment: cover; }
@@ -662,22 +1008,24 @@ footer h5 {
   #newsletter p {
     font-size: 20px; }
 
-  #barre {
-    display: flex;
-    justify-content: center;
-    font-size: 14px;
-    padding: 20px 0 30px 0; }
+  #blocMail {
+    width: 90%;
+    display: block;
+    margin: auto; }
+
+  #email {
+    display: block;
+    margin: auto; }
 
   #validate {
-    padding: 5px 10px;
-    font-size: 10px; }
-
-  #qui {
-    height: 700px; }
+    display: block;
+    font-size: 10px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px; }
 
   #qui h3 {
-    font-size: 25px;
-    margin-top: -40px; }
+    font-size: 30px; }
 
   .ligne {
     width: 100%;
@@ -689,26 +1037,40 @@ footer h5 {
     display: block; }
 
   #bloc-gauche img {
-    width: 250px;
-    height: 200px;
-    margin: 0px 40px; }
-
-  #bloc-gauche {
-    padding: 0px 0px 0px 0px;
-    margin: auto; }
+    width: 90%;
+    margin: auto;
+    display: block; }
 
   #bloc-droit {
     display: block;
-    padding: 20px; }
+    margin: 0px;
+    padding: 0px; }
 
   #bloc-bio p {
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center; }
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    padding: 20px 20px 20px 20px; }
+
+  #infos-pratique {
+    padding: 0px; }
+
+  footer {
+    display: block; }
+
+  footer h5 {
+    font-size: 20px; }
+
+  .ligne2 {
+    width: 100%;
+    display: block;
+    box-sizing: border-box; }
+
+  .ligne2 div {
+    width: 100%; }
 
   #contact h3 {
-    font-size: 25px;
-    margin-top: -40px; }
+    font-size: 35px; }
 
   #infos-pratique {
     display: flex;
@@ -720,14 +1082,14 @@ footer h5 {
     width: 100%; }
 
   .content-info p {
-    max-width: 300px;
+    width: 100%;
     line-height: 20px;
     font-size: 20px;
     text-align: center; }
 
   #facebook-et-map {
-    width: 300px;
-    display: flex;
+    width: 100%;
+    display: block;
     flex-wrap: wrap;
     margin: auto; }
 
@@ -760,7 +1122,7 @@ footer h5 {
     height: 50px;
     padding: 5px; }
 
-  /* barre de recherche */
+  /* barre de recherche  320 */
   #choixVoyage {
     display: flex;
     margin: 20px auto;
@@ -786,8 +1148,7 @@ footer h5 {
   #demande-formulaire h2 {
     font-size: 15px;
     text-align: center;
-    margin: 15px;
-    margin-top: -40px; }
+    margin: 15px; }
 
   #form {
     background-color: #e8e8e8;
@@ -797,26 +1158,13 @@ footer h5 {
 
   #demande-formulaire .form-style-1 {
     display: block;
-    width: 100%; }
+    width: 80%; }
 
   #demande-formulaire .form-style-1 .field-divided {
     width: 100%; }
 
   #demande-formulaire .form-style-1 .field-long {
-    width: 150px;
-    margin: 5px 0 0 0; }
-
-  footer {
-    display: block; }
-
-  footer h5 {
-    font-size: 15px; }
-
-  .ligne2 {
-    width: 100%;
-    display: block; }
-
-  .ligne2 div {
-    width: 100%; } }
+    width: 180px;
+    margin: 5px 0 0 0; } }
 
 /*# sourceMappingURL=style.css.map */

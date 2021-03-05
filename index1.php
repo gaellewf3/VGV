@@ -26,8 +26,7 @@
 
 <h3>Découvrez les dernières offres</h3>
 
-<!-- <div class="cartes"> -->
-<div class="carte">
+ <div class="carte">
 
              <div class="image-carte"> </div>
                       <div class="description">  
@@ -170,9 +169,12 @@
                      <!-- message Votre inscription a ete prise en compte-->
                             <div id="blocMail">
                                 <input type="email" id="email" placeholder="Votre mail" >
-                             </div>
-                        <a href="#" id="validate">S'inscrire</a> 
-                        
+                           
+            <input id="validate" type="submit" value="S'inscrire" id="validate">  
+
+
+                        <!-- <a href="#" id="validate">S'inscrire</a>  -->
+                          </div>
         
 
                 </form>
@@ -189,7 +191,7 @@
             <div id="bloc-gauche">
 
                     <div id="image-agence">
-                    <img src="../VGV/img/portrait.png" alt="portrait Maurice Di Domenico">
+                    <img src="img/portrait.png" alt="portrait Maurice Di Domenico">
                     </div>
             </div>
 
@@ -216,11 +218,9 @@
 </section>
 
 
-
 <section id="contact">
 
     <h3>Contactez-nous</h3>
-
 
     <div id="infos-pratique">
 
@@ -256,11 +256,11 @@
 
         <form id="formulaire">
             <div class="form-style-1">
-                    <input type="text" name="nom" class="field-divided" placeholder="Nom"  required /> 
-                    <input type="text" name="prenom" class="field-divided" placeholder="Prenom" required/>
+                    <input type="text" id="nom" name="nom" class="field-divided" placeholder="Nom" minlength="2" required /> 
+                    <input type="text" id="prenom" name="prenom" class="field-divided" placeholder="Prenom" minlength="2" required/>
                     
-                    <input type="email" name="email" class="field-divided" placeholder="Email"  required/>
-                    <input type="tel" name="tel" class="field-divided" placeholder="Telephone" required/>
+                    <input type="email" id="email2"  name="email" class="field-divided" placeholder="Email" minlength="6" required/>
+                    <input type="tel" id="tel" name="tel" class="field-divided" placeholder="Telephone" minlength="10" required/>
    
                    <textarea name="message" id="message" class="field-long field-textarea" placeholder="Votre message" required ></textarea>
                  
@@ -276,7 +276,7 @@
 
      <?php require_once "inc/footer.inc.php";?>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
 
 </body>
 
