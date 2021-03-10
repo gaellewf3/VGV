@@ -13,11 +13,12 @@ var mymap = L.map("map").setView([ 48.56300,2.34268], 13);
 	L.marker([48.56300, 2.34268]).addTo(mymap);
 
 
+
+
+
+
+
     // ------------ envoie form si click accepte  -------------
-
-
-
-    
 
     //---- form resa
 
@@ -27,22 +28,40 @@ var mymap = L.map("map").setView([ 48.56300,2.34268], 13);
     var telResa = document.getElementById('telResa')
     
 
-    document.getElementById('field5Resa').addEventListener('click', checkForm);
-    nomResa.addEventListener('change', checkForm);
-    prenomResa.addEventListener('change', checkForm);
-    telResa.addEventListener('change', checkForm);
-    emailResa.addEventListener('change', checkForm);
+    document.getElementById('field5Resa').addEventListener('click', checkFormResa);
+    nomResa.addEventListener('change', checkFormResa);
+    prenomResa.addEventListener('change', checkFormResa);
+    telResa.addEventListener('change', checkFormResa);
+    emailResa.addEventListener('change', checkFormResa);
 
-    function checkForm() {
+    function checkFormResa() {
         var checkbox = document.getElementById("field5Resa");
         console.log(checkbox);
-        if (checkbox.checked == true && prenomResa.value.length > 2 && nomResa.value.length  > 2 && email2Resa.value.length > 6  && telResa.value.length >= 10  )
+        if (checkbox.checked == true && prenomResa.value.length > 2 && nomResa.value.length  > 2 && emailResa.value.length > 6  && telResa.value.length >= 10  )
         {
             document.getElementById("envoyerFormResa2").disabled = false;
         } else {
             document.getElementById("envoyerFormResa2").disabled = true;
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     
@@ -63,8 +82,7 @@ var mymap = L.map("map").setView([ 48.56300,2.34268], 13);
     
     function checkForm() {
         var checkbox = document.getElementById("field5Resa2");
-        // console.log(checkbox);
-        if (checkbox.checked == true && prenom.value.length > 2 && nom.value.length  > 2 && email2.value.length > 6  && tel.value.length >= 10  )
+         if (checkbox.checked == true && prenom.value.length > 2 && nom.value.length  > 2 && email2.value.length > 6  && tel.value.length >= 10  )
         {
             document.getElementById("envoyerForm2").disabled = false;
         } else {
