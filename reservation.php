@@ -2,12 +2,9 @@
 
 
     <section id="banniere-page-reservation">
-    
             <div id="rectangle-demande-reservation">
             <h1> Demande de réservation </h1> 
             </div>
-            
-
     </section>
 
 
@@ -20,11 +17,11 @@
 
     <div id="form">
     <div class="form-style-1">
-        <input type="text" name="nom" class="field-divided" placeholder="Nom"   required /> 
-        <input type="text" name="prenom" class="field-divided" placeholder="Prenom" required/>
+        <input type="text" id="nomResa" name="nom" class="field-divided" placeholder="Nom" minlength="2" required /> 
+        <input type="text" id="prenomResa" name="prenom" class="field-divided" placeholder="Prenom" minlength="2" required/>
               
-        <input type="email" name="email" class="field-divided" placeholder="Email" required/>
-        <input type="tel" name="tel" class="field-divided" placeholder="Telephone" required/>
+        <input type="email" id="emailResa" name="email2" class="field-divided" placeholder="Email" minlength="6"  required/>
+        <input type="tel" id="telResa" name="tel" class="field-divided" placeholder="Telephone" minlength="10"  required/>
     
         <select name="type" class="field-divided">
             <option value="" disabled selected hidden>Type de voyage</option>
@@ -300,19 +297,17 @@
            onChange="dateDepartCallBack(event)" required>  
            <br>
 
-           <label for="dateRet"  >Votre date de retour</label> 
+           <label for="dateRet">Votre date de retour</label> 
 
         <input id="dateRet" class="field-divided"  type="date"
              /> 
       
       <textarea name="message" id="message" class="field-long field-textarea" placeholder="Projet de séjour" required></textarea>
-      <input type="checkbox" id="field5" class="field5"> J’accepte d’être recontacté.e par Vert-Galant Voyages et ses partenaires.  
-      <input id="envoyerForm" type="submit" value="envoyer" disabled/>
+      <input type="checkbox" id="field5Resa" class="field5" ><label for="field5"> J’accepte d’être recontacté.e par Vert-Galant Voyages et ses partenaires.  
+      <input id="envoyerFormResa2" type="submit" value="envoyer" disabled/>
    
     </div>           
     </section>
-
-
 
     <section id="contact">
 
@@ -345,17 +340,18 @@
 
     <form id="formulaire">
          <div class="form-style-1">
-            <input type="text" name="nom" class="field-divided" placeholder="Nom" value="<?php echo $_POST['nom'] ?? ''; ?>" required /> 
-            <input type="text" name="prenom" class="field-divided" placeholder="Prenom" value="<?php echo $_POST['prenom'] ?? ''; ?>" required/>
+            <input type="text" id="nom" name="nom" class="field-divided" placeholder="Nom" minlength="2" required /> 
+            <input type="text" id="prenom" name="prenom" class="field-divided" placeholder="Prenom" minlength="2" required/>
             
-            <input type="email" name="email" class="field-divided" placeholder="Email" value="<?php echo $_POST['email'] ?? ''; ?>" required/>
-            <input type="tel" name="tel" class="field-divided" placeholder="Telephone" value="<?php echo $_POST['tel'] ?? ''; ?>" required/>
+            <input type="email" id="email2" name="email" class="field-divided" placeholder="Email" minlength="6" required/>
+            <input type="tel" id="tel" name="tel" class="field-divided" placeholder="Telephone"  minlength="10" required/>
 
-           <textarea name="message" id="message" class="field-long field-textarea" placeholder="Votre message" required><?php echo $_POST['message'] ?? ''; ?></textarea>
+           <textarea name="message" id="message" class="field-long field-textarea" placeholder="Votre message" required></textarea>
          
-            <input type="checkbox" id="field5" name="field5"> J’accepte d’être recontacté.e par Vert-Galant Voyages et ses partenaires. 
+           
+            <input type="checkbox" id="field5Resa2" name="field5" ><label for="field5">  J’accepte d’être recontacté.e par Vert-Galant Voyages et ses partenaires. </label>
 
-            <input id="envoyerForm" type="submit" value="envoyer" disabled/>
+            <input id="envoyerForm2" type="submit" value="envoyer" disabled/>
 
    </form>         
 </div>
@@ -368,7 +364,10 @@
 
   <?php require_once "inc/footer.inc.php";?>
 
-  <script type="text/javascript" src="script/script.js"></script>
+  <script type="text/javascript" src="script/script-reservations.js"></script>
+
+
+  <!-- <script type="text/javascript" src="script/script.js"></script> -->
 
 
 </body>

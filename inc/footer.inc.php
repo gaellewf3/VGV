@@ -21,7 +21,7 @@
                     ©Vert-Galant Voyages 2021 <br><br>
                     Design / Développement :<br>
                    <a href="http://testibuzz.com/" target="_blank"> TestiBuzz <br><br>
-                    <a href="#"> Mentions légales</a> 
+                    <a href="mentions.php"> Mentions légales</a> 
             </div>
 
     </div>

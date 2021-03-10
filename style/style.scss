@@ -71,7 +71,7 @@ header img {
     background: url(../img/plage_accueil.jpg) no-repeat center center; 
     background-repeat:no-repeat;
     background-size: cover;
-    padding: 120px;
+    padding: 120px 0px;
 }
 
 
@@ -379,6 +379,10 @@ h4 {
         border: none;
         padding: 10px;
       }
+
+      #validate:hover{
+        color: black;
+      }
   
 
 //**** section Qui sommes-nous page INDEX1//
@@ -621,7 +625,7 @@ input[type=submit]:disabled {
     background-color: white;
     margin: auto;
     width:600px;
-    height: 50px;
+    // height: 50px;
   }
 
  
@@ -706,9 +710,8 @@ input[type=submit]:disabled {
  #rectangle-demande-reservation {
       background-color: white;
       margin:  auto;
-      width: 460px;
-      height:50px;
-      
+       width: 40%;
+      // height:50px;   
   }
 
   
@@ -759,6 +762,7 @@ input[type=submit]:disabled {
 	width: 100%;
 	display: flex;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .ligne2 div  {
@@ -795,6 +799,40 @@ input[type=submit]:disabled {
   width: 7%;
 }
 
+#maintenance {
+  background: url(../img/feuille.png); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 250px;
+}
+
+
+
+#maintenance h1 {
+  font-size: 70px;
+  color:#00E300;
+  text-align: center;
+}
+
+#maintenance h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+#mentions h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+#mentions p {
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+ 
 
 
  //----------------------RESPONSIVE-------------------------// 
@@ -1024,10 +1062,39 @@ font-size: 20px;
 
 }
 
+@media screen and (max-width: 670px){
+
+  #choixVoyage {
+    display: block;
+      margin: 20px auto;
+      justify-content: center;
+      padding: 40px;
+   }
+  
+  
+   .btnVoyage {
+     display: block;
+      font-size: 23px;
+      padding: 16px;
+      margin: 5px 5px;
+      text-align: center;
+  }
+ 
+}
+
+@media screen and (max-width: 565px){
+ 
+   
+   #demande-formulaire .form-style-1 {
+ margin: 0px;
+   
+   }
+  }
+
 
 //---------------------------------------------------------------------------------------------------------
 
-@media  screen and (max-width: 500px){
+@media screen and (max-width: 500px){
   
 
 
@@ -1629,15 +1696,14 @@ text-align: center;
  //************ page OFFRES 320 ************
 
 #accueil-offres h1 {
-  font-size: 20px; 
+  font-size: 25px; 
 }
 
 
 .rect-blanc {
     background-color: white;
     margin: auto;
-    width: 170px;
-    height: 50px;
+    width: 60%;
     padding: 5px;
   }
 
@@ -1647,23 +1713,19 @@ text-align: center;
 
  /* barre de recherche  320 */
 
-#choixVoyage {
-    display: flex;
-	  margin: 20px auto;
-  	justify-content: center;
- }
-
-
- .btnVoyage {
-  
-	  border-radius: 5px;
-	  font-size: 8px;
-	  padding: 2px;
-	  margin: 5px 5px;
-}
-
  
+#choixVoyage {
+  display: block;
+  margin: 20px auto;
+  justify-content: center;
+  padding: 40px; }
 
+.btnVoyage {
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px 5px;
+  text-align: center; }
 
 
  //************ page RESERVATION  320 ************

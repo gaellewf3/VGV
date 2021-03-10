@@ -264,7 +264,7 @@
    
                    <textarea name="message" id="message" class="field-long field-textarea" placeholder="Votre message" required ></textarea>
                  
-                    <input type="checkbox" id="field5" name="field5"> J’accepte d’être recontacté.e par Vert-Galant Voyages et ses partenaires. 
+                    <input type="checkbox" id="field5" name="field5"> <label for="field5"> J’accepte d’être recontacté.e par Vert-Galant Voyages et ses partenaires. 
         
                     <input id="envoyerForm" type="submit" value="envoyer" disabled/>
             </div>  
@@ -275,8 +275,10 @@
 </section>
 
      <?php require_once "inc/footer.inc.php";?>
+     <script type="text/javascript" src="script/script-index.js"></script>
 
-    <script type="text/javascript" src="script/script.js"></script>
+
+    <!-- <script type="text/javascript" src="script/script.js"></script> -->
 
 </body>
 

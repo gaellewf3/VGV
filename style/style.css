@@ -48,7 +48,7 @@ header img {
   background: url(../img/plage_accueil.jpg) no-repeat center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 120px; }
+  padding: 120px 0px; }
 
 .ligne-banniere-page-index {
   width: 100%;
@@ -272,6 +272,9 @@ h4 {
   border: none;
   padding: 10px; }
 
+#validate:hover {
+  color: black; }
+
 #qui {
   background: url(../img/feuille.png);
   background-position: center;
@@ -448,8 +451,7 @@ input[type=submit]:disabled {
 .rect-blanc {
   background-color: white;
   margin: auto;
-  width: 600px;
-  height: 50px; }
+  width: 600px; }
 
 /* barre de recherche */
 #choixVoyage {
@@ -505,8 +507,7 @@ input[type=submit]:disabled {
 #rectangle-demande-reservation {
   background-color: white;
   margin: auto;
-  width: 460px;
-  height: 50px; }
+  width: 40%; }
 
 #rectangle-demande-reservation h1 {
   font-size: 36px;
@@ -540,7 +541,8 @@ footer h5 {
 .ligne2 {
   width: 100%;
   display: flex;
-  padding: 20px; }
+  padding: 20px;
+  box-sizing: border-box; }
 
 .ligne2 div {
   width: 50%; }
@@ -566,6 +568,30 @@ footer h5 {
 .logo img {
   padding: 2px;
   width: 7%; }
+
+#maintenance {
+  background: url(../img/feuille.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 250px; }
+
+#maintenance h1 {
+  font-size: 70px;
+  color: #00E300;
+  text-align: center; }
+
+#maintenance h2 {
+  font-size: 50px;
+  text-align: center; }
+
+#mentions h1 {
+  font-size: 50px;
+  text-align: center; }
+
+#mentions p {
+  font-size: 20px;
+  text-align: center; }
 
 @media screen and (max-width: 1000px) {
   /** menu burger **/
@@ -718,6 +744,22 @@ footer h5 {
 
   .ligne2 {
     padding: 0px; } }
+@media screen and (max-width: 670px) {
+  #choixVoyage {
+    display: block;
+    margin: 20px auto;
+    justify-content: center;
+    padding: 40px; }
+
+  .btnVoyage {
+    display: block;
+    font-size: 23px;
+    padding: 16px;
+    margin: 5px 5px;
+    text-align: center; } }
+@media screen and (max-width: 565px) {
+  #demande-formulaire .form-style-1 {
+    margin: 0px; } }
 @media screen and (max-width: 500px) {
   /** menu burger**/
   .bordureMenuBurger {
@@ -1113,26 +1155,27 @@ footer h5 {
     padding: 10px; }
 
   #accueil-offres h1 {
-    font-size: 20px; }
+    font-size: 25px; }
 
   .rect-blanc {
     background-color: white;
     margin: auto;
-    width: 170px;
-    height: 50px;
+    width: 60%;
     padding: 5px; }
 
   /* barre de recherche  320 */
   #choixVoyage {
-    display: flex;
+    display: block;
     margin: 20px auto;
-    justify-content: center; }
+    justify-content: center;
+    padding: 40px; }
 
   .btnVoyage {
-    border-radius: 5px;
-    font-size: 8px;
-    padding: 2px;
-    margin: 5px 5px; }
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px 5px;
+    text-align: center; }
 
   #banniere-page-reservation {
     margin-top: 120px;
